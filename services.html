@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Направления — ГорУроЦентр</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ====== HEADER ====== -->
+  <header class="header">
+    <div class="top-bar">
+      <div class="top-bar-inner">
+        <a href="tel:+78125761157">+7 (812) 576-11-57</a>
+        <div class="top-bar-links">
+          <a href="glavvrach.html"><span class="dot"></span>Приемная главного врача</a>
+          <a href="index.html#online-consult"><span class="dot"></span>Онлайн-консультация</a>
+        </div>
+      </div>
+    </div>
+    <div class="header-main">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="ГорУроЦентр">
+        <div class="logo-text">
+          <span class="logo-name" style="font-size:13px;">Городской центр эндоскопической<br>урологии и новых технологий</span>
+          <span class="logo-tagline">Санкт-Петербурга</span>
+        </div>
+      </a>
+      <nav class="nav">
+        <div class="nav-item">
+          <a href="#" class="nav-trigger">О центре <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg></a>
+          <div class="dropdown">
+            <a href="index.html#about">О центре</a>
+            <a href="index.html#news">Новости</a>
+            <a href="glavvrach.html">Главный врач</a>
+          </div>
+        </div>
+        <a href="services.html" class="active">Направления</a>
+        <a href="doctors.html">Врачи</a>
+        <a href="index.html#contacts">Контакты</a>
+      </nav>
+      <div class="header-actions">
+        <a href="#appointment" class="btn btn-primary desktop-only">Записаться</a>
+        <div class="hamburger"><span></span><span></span><span></span></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-overlay">
+    <div class="mobile-menu">
+      <button class="mobile-close">Закрыть <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+      <nav class="mobile-nav">
+        <a href="index.html">Главная</a>
+        <a href="services.html">Направления</a>
+        <a href="doctors.html">Врачи</a>
+        <a href="glavvrach.html">Главный врач</a>
+      </nav>
+      <div class="mobile-cta"><a href="#appointment" class="btn btn-primary" style="width:100%;">Записаться</a></div>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="direction-hero">
+    <div class="direction-hero-inner">
+      <div class="breadcrumb"><a href="index.html">Главная</a><span>/</span><span>Направления</span></div>
+      <h1 class="direction-hero-title reveal">Направления<br>и специализации</h1>
+      <p class="direction-hero-desc reveal reveal-delay-1">В центре представлено более 11 высокотехнологичных направлений урологической помощи — от классической эндоскопии до робот-ассистированной хирургии и трансплантации.</p>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <div class="direction-categories">
+    <div class="direction-categories-inner">
+      <p class="direction-categories-title">Категории направлений</p>
+      <div class="direction-cat-grid">
+        <button class="direction-cat-btn active" data-cat="all">Все направления</button>
+        <button class="direction-cat-btn" data-cat="basic">Основные</button>
+        <button class="direction-cat-btn" data-cat="new">Новые технологии</button>
+        <button class="direction-cat-btn" data-cat="surgery">Хирургия</button>
+        <button class="direction-cat-btn" data-cat="science">Наука и образование</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Directions List -->
+  <section class="direction-list">
+    <div class="direction-list-inner">
+
+      <!-- GROUP 1: DGPZH -->
+      <div class="direction-group reveal" data-cat="basic surgery">
+        <h2 class="direction-group-title">Доброкачественная гиперплазия предстательной железы</h2>
+        <p class="direction-group-desc">Комплексное лечение аденомы предстательной железы любых размеров с применением передовых малоинвазивных технологий.</p>
+
+        <div class="direction-item"><span class="direction-item-letter">Д</span><div><h3 class="direction-item-name">Диагностика ДГПЖ</h3><p class="direction-item-desc">УЗИ, КТ, МРТ, уродинамическое исследование, определение объема простаты</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="direction-item"><span class="direction-item-letter">Л</span><div><h3 class="direction-item-name">Лазерная (гольмиевая) энуклеация аденомы предстательной железы (HoLEP)</h3><p class="direction-item-desc">Золотой стандарт лечения ДГПЖ при больших размерах простаты. Минимальная кровопотеря, быстрое восстановление.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="direction-item"><span class="direction-item-letter">Л</span><div><h3 class="direction-item-name">Лапароскопическая позадилонная аденомэктомия</h3><p class="direction-item-desc">Удаление аденомы через лапароскопический доступ при очень больших размерах простаты (свыше 120 см³).</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="direction-item"><span class="direction-item-letter">Т</span><div><h3 class="direction-item-name">ТУР (трансуретральная резекция) аденомы предстательной железы</h3><p class="direction-item-desc">Классический метод при малых и средних размерах простаты (до 60-80 см³). Золотой стандарт малоинвазивного лечения.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="direction-item"><span class="direction-item-letter">Т</span><div><h3 class="direction-item-name">ТУЭБ (трансуретральная энуклеация) аденомы предстательной железы</h3><p class="direction-item-desc">Энуклеация аденомы при больших размерах свыше 100 см³. Полное удаление адenomatозной ткани.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+      </div>
+
+      <!-- GROUP 2: Urolithiasis -->
+      <div class="direction-group reveal" data-cat="basic surgery">
+        <h2 class="direction-group-title">Лечение мочекаменной болезни</h2>
+        <p class="direction-group-desc">Современные методы диагностики и лечения мочекаменной болезни любой сложности — от консервативной терапии до эндоскопических операций.</p>
+
+        <div class="direction-item"><span class="direction-item-letter">Д</span><div><h3 class="direction-item-name">ДЛТ (дистанционная литотрипсия)</h3><p class="direction-item-desc">Неконтактное дробление камней почек и мочеточников с помощью ударно-волнового литотриптора.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="direction-item"><span class="direction-item-letter">К</span><div><h3 class="direction-item-name">Контактная литотрипсия</h3><p class="direction-item-desc">Эндоскопическое дробление камней мочеточника и почки с помощью лазерного или пневматического литотриптора.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="direction-item"><span class="direction-item-letter">Л</span><div><h3 class="direction-item-name">Лапароскопическое удаление камней мочеточников</h3><p class="direction-item-desc">Удаление крупных камней мочеточника лапароскопическим доступом при неэффективности эндоскопических методов.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="direction-item"><span class="direction-item-letter">М</span><div><h3 class="direction-item-name">Минимально-инвазивные перкутанные вмешательства</h3><p class="direction-item-desc">Перкутанные операции на почке при крупных камнях и сложных аномалиях.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="direction-item"><span class="direction-item-letter">П</span><div><h3 class="direction-item-name">Перкутанная нефролитотрипсия</h3><p class="direction-item-desc">Удаление крупных камней почки через прокол в поясничной области. Золотой стандарт при коралловидных камнях.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="direction-item"><span class="direction-item-letter">К</span><div><h3 class="direction-item-name">Консервативное лечение</h3><p class="direction-item-desc">Медикаментозная терапия, метафилактика, дисметаболическая терапия, коррекция pH мочи.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+      </div>
+
+      <!-- GROUP 3: Oncourology -->
+      <div class="direction-group reveal" data-cat="basic surgery">
+        <h2 class="direction-group-title">Онкоурология</h2>
+        <p class="direction-group-desc">Комплексное лечение злокачественных новообразований органов мочевой системы с применением малоинвазивных технологий.</p>
+
+        <div class="direction-item"><span class="direction-item-letter">Л</span><div><h3 class="direction-item-name">Лечение рака почки</h3><p class="direction-item-desc">Лапароскопическая радикальная нефрэктомия, паренхимосохраняющие операции, робот-ассистированная хирургия.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="direction-item"><span class="direction-item-letter">Л</span><div><h3 class="direction-item-name">Лечение рака мочевого пузыря</h3><p class="direction-item-desc">ТУР опухоли мочевого пузыря, внутрипузырная химиотерапия, цистэктомия с созданием замещающего резервуара.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="direction-item"><span class="direction-item-letter">Л</span><div><h3 class="direction-item-name">Лечение рака простаты</h3><p class="direction-item-desc">Радикальная простатэктомия (открытая, лапароскопическая, робот-ассистированная), брахитерапия, активное наблюдение.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+      </div>
+
+      <!-- GROUP 4: Reconstructive -->
+      <div class="direction-group reveal" data-cat="basic surgery">
+        <h2 class="direction-group-title">Реконструктивная урология</h2>
+        <p class="direction-group-desc">Восстановительные операции на мочевыводящих путях, лечение стриктур, недержания, врожденных аномалий.</p>
+
+        <div class="direction-item"><span class="direction-item-letter">Л</span><div><h3 class="direction-item-name">Лапароскопическая пластика стриктуры пиелоуретерального сегмента</h3><p class="direction-item-desc">Устранение стриктуры верхнего отдела мочеточника с восстановлением проходимости.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="direction-item"><span class="direction-item-letter">Л</span><div><h3 class="direction-item-name">Лапароскопически ассистированная кишечная пластика мочеточника</h3><p class="direction-item-desc">Замена длинного дефекта мочеточника сегментом тонкой кишки при облитерации.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="direction-item"><span class="direction-item-letter">Н</span><div><h3 class="direction-item-name">Недержание мочи у мужчин</h3><p class="direction-item-desc">Комплексная диагностика и лечение всех форм недержания мочи, включая постоперационное.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="direction-item"><span class="direction-item-letter">Н</span><div><h3 class="direction-item-name">Нефропексия</h3><p class="direction-item-desc">Фиксация почки при нефроптозе (опущении почки) лапароскопическим доступом.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="direction-item"><span class="direction-item-letter">П</span><div><h3 class="direction-item-name">Петлевая пластика уретры с использованием сетчатого эндопротеза (TVT, TVT-O, TVT-sec) при стрессовом недержании мочи</h3><p class="direction-item-desc">Установка синтетического слинга при стрессовом недержании мочи у мужчин и женщин.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="direction-item"><span class="direction-item-letter">С</span><div><h3 class="direction-item-name">Стриктуры уретры</h3><p class="direction-item-desc">Эндоскопическая и открытая пластика стриктур уретры любой локализации и сложности.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="direction-item"><span class="direction-item-letter">Ф</span><div><h3 class="direction-item-name">Фаллопротезирование</h3><p class="direction-item-desc">Имплантация надувного или полужесткого фаллопротеза при тяжелой эректильной дисфункции.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="direction-item"><span class="direction-item-letter">Э</span><div><h3 class="direction-item-name">Эндоскопическая реканализация облитерации мочеточника</h3><p class="direction-item-desc">Восстановление проходимости мочеточника при облитерации эндоскопическими методами.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+      </div>
+
+      <!-- GROUP 5: Reproductive -->
+      <div class="direction-group reveal" data-cat="basic">
+        <h2 class="direction-group-title">Репродуктивная урология</h2>
+        <p class="direction-group-desc">Лечение заболеваний, влияющих на мужское репродуктивное здоровье и качество половой жизни.</p>
+
+        <div class="direction-item"><span class="direction-item-letter">Л</span><div><h3 class="direction-item-name">Лапароскопическое клипирование яичковой вены</h3><p class="direction-item-desc">Лечение варикоцеле лапароскопическим методом — минимальная травматичность, высокая эффективность.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="direction-item"><span class="direction-item-letter">О</span><div><h3 class="direction-item-name">Операция Мармара</h3><p class="direction-item-desc">Микрохирургическая операция при варикоцеле с сохранением артерии и лимфатических сосудов.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="direction-item"><span class="direction-item-letter">П</span><div><h3 class="direction-item-name">Преждевременное семяизвержение</h3><p class="direction-item-desc">Комплексное лечение преждевременного семяизвержения: консервативная терапия, БОС-тренинг.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+      </div>
+
+      <!-- GROUP 6: Functional -->
+      <div class="direction-group reveal" data-cat="basic">
+        <h2 class="direction-group-title">Функциональная урология, нейроурология и уродинамика</h2>
+        <p class="direction-group-desc">Диагностика и лечение функциональных нарушений мочевыделительной системы, нейрогенных расстройств.</p>
+
+        <div class="direction-item"><span class="direction-item-letter">Д</span><div><h3 class="direction-item-name">Диагностика и лечение нарушений мочеиспускания и недержания мочи</h3><p class="direction-item-desc">Комплексный подход к диагностике и лечению всех форм нарушений мочеиспускания.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="direction-item"><span class="direction-item-letter">К</span><div><h3 class="direction-item-name">Комплексное уродинамическое исследование (КУДИ)</h3><p class="direction-item-desc">Золотой стандарт диагностики функциональных нарушений нижних мочевых путей.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="direction-item"><span class="direction-item-letter">Л</span><div><h3 class="direction-item-name">Лечение синдрома хронической тазовой боли</h3><p class="direction-item-desc">Комплексная терапия хронической тазовой боли у мужчин и женщин.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="direction-item"><span class="direction-item-letter">Л</span><div><h3 class="direction-item-name">Лечение хронической рецидивирующей инфекции нижних мочевых путей (в том числе хронического рецидивирующего цистита)</h3><p class="direction-item-desc">Диагностика причин рецидивов и индивидуальная схема лечения.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="direction-item"><span class="direction-item-letter">Д</span><div><h3 class="direction-item-name">Диагностика и лечение интерстициального цистита</h3><p class="direction-item-desc">Специализированная диагностика и многофакторное лечение интерстициального цистита/синдрома болезненного мочевого пузыря.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="direction-item"><span class="direction-item-letter">Ф</span><div><h3 class="direction-item-name">Физиотерапия и реабилитация при функциональных нарушениях органов малого таза и тазового дна</h3><p class="direction-item-desc">Комплексная реабилитация с применением современных физиотерапевтических методов.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="direction-item"><span class="direction-item-letter">Т</span><div><h3 class="direction-item-name">Терапия с применением метода биологической обратной связи (БОС-терапия)</h3><p class="direction-item-desc">Обучение управлению функциями тазового дна с помощью биологической обратной связи.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="direction-item"><span class="direction-item-letter">Б</span><div><h3 class="direction-item-name">Ботулинотерапия</h3><p class="direction-item-desc">Введение ботулотоксина при нейрогенном мочевом пузыре, гиперактивном мочевом пузыре, недержании мочи.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+      </div>
+
+      <!-- GROUP 7: Robotic Surgery — NEW -->
+      <div class="direction-group reveal" data-cat="new surgery">
+        <h2 class="direction-group-title" style="border-color:var(--cyan);">Центр роботической хирургии <span class="card-tag card-tag-new" style="margin-left:12px;vertical-align:middle;">НОВОЕ</span></h2>
+        <p class="direction-group-desc">Робот-ассистированная хирургия открывает новые возможности в лечении сложных урологических заболеваний.</p>
+
+        <div class="direction-item" style="border-left:3px solid var(--cyan);"><span class="direction-item-letter" style="color:var(--cyan);">Р</span><div><h3 class="direction-item-name">Робот-ассистированная радикальная простатэктомия</h3><p class="direction-item-desc">Точное удаление предстательной железы при раке с сохранением нервов и сфинктеров.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="direction-item" style="border-left:3px solid var(--cyan);"><span class="direction-item-letter" style="color:var(--cyan);">П</span><div><h3 class="direction-item-name">Паренхимосохраняющие операции на почке</h3><p class="direction-item-desc">Удаление опухоли почки с сохранением здоровой ткани и функции органа.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="direction-item" style="border-left:3px solid var(--cyan);"><span class="direction-item-letter" style="color:var(--cyan);">Р</span><div><h3 class="direction-item-name">Роботическая кистэктомия с созданием необходимого резервуара</h3><p class="direction-item-desc">Удаление мочевого пузыря при раке с созданием неоцисты или уретероилеокутанеостомы.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="direction-item" style="border-left:3px solid var(--cyan);"><span class="direction-item-letter" style="color:var(--cyan);">Р</span><div><h3 class="direction-item-name">Реконструктивные операции на мочеточнике</h3><p class="direction-item-desc">Точное восстановление мочеточника при стриктурах и повреждениях.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="direction-item" style="border-left:3px solid var(--cyan);"><span class="direction-item-letter" style="color:var(--cyan);">Л</span><div><h3 class="direction-item-name">Лимфаденэктомия повышенной сложности</h3><p class="direction-item-desc">Точное удаление лимфатических узлов при онкологических заболеваниях.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+      </div>
+
+      <!-- GROUP 8: Kidney Transplant — NEW -->
+      <div class="direction-group reveal" data-cat="new surgery">
+        <h2 class="direction-group-title" style="border-color:var(--cyan);">Трансплантация почки <span class="card-tag card-tag-new" style="margin-left:12px;vertical-align:middle;">НОВОЕ</span></h2>
+        <p class="direction-group-desc">Современная программа трансплантации почки: подготовка, операция и посттрансплантационный мониторинг.</p>
+
+        <div class="direction-item" style="border-left:3px solid var(--cyan);"><span class="direction-item-letter" style="color:var(--cyan);">К</span><div><h3 class="direction-item-name">Комплексная подготовка реципиента и донора</h3><p class="direction-item-desc">Полное обследование, иммунологическая типизация, консультации специалистов.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="direction-item" style="border-left:3px solid var(--cyan);"><span class="direction-item-letter" style="color:var(--cyan);">Л</span><div><h3 class="direction-item-name">Лапароскопическая донорская нефрэктомия</h3><p class="direction-item-desc">Малоинвазивное извлечение почки от живого донора с минимальной травматичностью.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="direction-item" style="border-left:3px solid var(--cyan);"><span class="direction-item-letter" style="color:var(--cyan);">Т</span><div><h3 class="direction-item-name">Трансплантация почки</h3><p class="direction-item-desc">Пересадка почки от живого или посмертного донора. Собственный протокол иммуносупрессии.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="direction-item" style="border-left:3px solid var(--cyan);"><span class="direction-item-letter" style="color:var(--cyan);">П</span><div><h3 class="direction-item-name">Посттрансплантационный мониторинг</h3><p class="direction-item-desc">Длительное наблюдение, контроль функции трансплантата, коррекция иммуносупрессивной терапии.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+      </div>
+
+      <!-- GROUP 9: Rezum — NEW -->
+      <div class="direction-group reveal" data-cat="new">
+        <h2 class="direction-group-title" style="border-color:var(--cyan);">Rezum-терапия <span class="card-tag card-tag-new" style="margin-left:12px;vertical-align:middle;">НОВОЕ</span></h2>
+        <p class="direction-group-desc">Минимально инвазивная терапия водяным паром при ДГПЖ — амбулаторная процедура.</p>
+
+        <div class="direction-item" style="border-left:3px solid var(--cyan);"><span class="direction-item-letter" style="color:var(--cyan);">R</span><div><h3 class="direction-item-name">Rezum — терапия водяным паром при ДГПЖ</h3><p class="direction-item-desc">Инъекция водяного пара в простату разрушает избыточную ткань аденомы. Процедура занимает 10-15 минут, не требует госпитализации, сохраняет эректильную функцию и фертильность.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+      </div>
+
+      <!-- GROUP 10: Education — NEW -->
+      <div class="direction-group reveal" data-cat="new science">
+        <h2 class="direction-group-title" style="border-color:var(--cyan);">Дополнительное профессиональное образование <span class="card-tag card-tag-new" style="margin-left:12px;vertical-align:middle;">НОВОЕ</span></h2>
+        <p class="direction-group-desc">Обучение специалистов передовым методам эндоскопической и лапароскопической урологии.</p>
+
+        <div class="direction-item" style="border-left:3px solid var(--cyan);"><span class="direction-item-letter" style="color:var(--cyan);">М</span><div><h3 class="direction-item-name">Мастер-классы по эндоскопической урологии</h3><p class="direction-item-desc">Практические курсы для практикующих урологов по эндоскопическим и лапароскопическим методам лечения.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="direction-item" style="border-left:3px solid var(--cyan);"><span class="direction-item-letter" style="color:var(--cyan);">С</span><div><h3 class="direction-item-name">Стажировка ординаторов и молодых специалистов</h3><p class="direction-item-desc">Программы стажировки для врачей-урологов, ординаторов и интернов.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="direction-item" style="border-left:3px solid var(--cyan);"><span class="direction-item-letter" style="color:var(--cyan);">С</span><div><h3 class="direction-item-name">Сертификационные циклы и курсы НМО</h3><p class="direction-item-desc">Подготовка к сертификационным экзаменам, курсы непрерывного медицинского образования.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="direction-item" style="border-left:3px solid var(--cyan);"><span class="direction-item-letter" style="color:var(--cyan);">Ш</span><div><h3 class="direction-item-name">Школы и выездные семинары</h3><p class="direction-item-desc">Организация выездных образовательных мероприятий и семинаров для специалистов из других регионов.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+      </div>
+
+      <!-- GROUP 11: Phalloprosthesis — already covered in reconstructive but separate -->
+      <div class="direction-group reveal" data-cat="new surgery">
+        <h2 class="direction-group-title" style="border-color:var(--cyan);">Фаллопротезирование <span class="card-tag card-tag-new" style="margin-left:12px;vertical-align:middle;">НОВОЕ</span></h2>
+        <p class="direction-group-desc">Хирургическая имплантация фаллопротеза при эректильной дисфункции, резистентной к консервативному лечению.</p>
+
+        <div class="direction-item" style="border-left:3px solid var(--cyan);"><span class="direction-item-letter" style="color:var(--cyan);">Т</span><div><h3 class="direction-item-name">Трехкомпонентный надувной фаллопротез</h3><p class="direction-item-desc">Наиболее современный тип протеза, обеспечивающий максимально естественную эрекцию и фликцидацию.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="direction-item" style="border-left:3px solid var(--cyan);"><span class="direction-item-letter" style="color:var(--cyan);">П</span><div><h3 class="direction-item-name">Полужесткий (malleable) фаллопротез</h3><p class="direction-item-desc">Простая и надежная конструкция, не требующая манипуляций для получения эрекции.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="direction-item" style="border-left:3px solid var(--cyan);"><span class="direction-item-letter" style="color:var(--cyan);">Р</span><div><h3 class="direction-item-name">Ревизия и замена фаллопротеза</h3><p class="direction-item-desc">Замена или ревизия ранее установленного фаллопротеза при механических неисправностях или по желанию пациента.</p></div><svg class="direction-item-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" style="background:linear-gradient(135deg,var(--accent),var(--primary));">
+    <div class="container">
+      <h2 class="section-title reveal" style="color:#fff;margin-bottom:16px;">Записаться на консультацию</h2>
+      <p class="section-desc reveal reveal-delay-1" style="color:rgba(255,255,255,0.85);max-width:600px;margin:16px auto 0;">Выберите подходящее направление и запишитесь на прием к нашим специалистам. Бесплатное лечение по ОМС.</p>
+      <div class="cta-actions reveal reveal-delay-2">
+        <a href="tel:+78125761157" class="btn btn-white" style="font-size:16px;text-transform:none;letter-spacing:0;font-weight:600;">+7 (812) 576-11-57</a>
+        <a href="#" class="btn btn-outline-white">Записаться на прием</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand"><span class="logo-name">ГОРУРОЦЕНТР</span><p>Городской центр эндоскопической урологии и новых технологий Санкт-Петербурга</p></div>
+      <div><h4 class="footer-title">Навигация</h4><div class="footer-links"><a href="index.html">Главная</a><a href="services.html">Направления</a><a href="doctors.html">Врачи</a><a href="glavvrach.html">Главный врач</a></div></div>
+      <div><h4 class="footer-title">Направления</h4><div class="footer-links"><a href="services.html">ДГПЖ</a><a href="services.html">Мочекаменная болезнь</a><a href="services.html">Онкоурология</a><a href="services.html">Роботическая хирургия</a><a href="services.html">Трансплантация почки</a><a href="services.html">Rezum</a></div></div>
+      <div>
+        <h4 class="footer-title">Контакты</h4>
+        <div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+7 (812) 576-11-57</div>
+        <div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>info@endourocenter.ru</div>
+        <div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Санкт-Петербург, КБ "Святителя Луки"</div>
+        <a href="#" class="btn btn-primary" style="margin-top:12px;">Записаться</a>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 ГорУроЦентр. Все права защищены.</div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
