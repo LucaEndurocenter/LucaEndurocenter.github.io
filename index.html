@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Городской центр эндоскопической урологии и новых технологий Санкт-Петербурга</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ====== HEADER ====== -->
+  <header class="header">
+    <div class="top-bar">
+      <div class="top-bar-inner">
+        <a href="tel:+78125761157">+7 (812) 576-11-57</a>
+        <div class="top-bar-links">
+          <a href="glavvrach.html"><span class="dot"></span>Приемная главного врача</a>
+          <a href="#online-consult"><span class="dot"></span>Онлайн-консультация</a>
+        </div>
+      </div>
+    </div>
+    <div class="header-main">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="ГорУроЦентр">
+        <div class="logo-text">
+          <span class="logo-name" style="font-size:13px;">Городской центр эндоскопической<br>урологии и новых технологий</span>
+          <span class="logo-tagline">Санкт-Петербурга</span>
+        </div>
+      </a>
+      <nav class="nav">
+        <div class="nav-item">
+          <a href="#" class="nav-trigger active">
+            О центре
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown">
+            <a href="index.html#about">О центре</a>
+            <a href="index.html#news">Новости</a>
+            <a href="#">Пациентам</a>
+            <a href="#">Отзывы</a>
+            <a href="glavvrach.html">Главный врач</a>
+          </div>
+        </div>
+        <a href="services.html">Направления</a>
+        <a href="doctors.html">Врачи</a>
+        <a href="index.html#contacts">Контакты</a>
+      </nav>
+      <div class="header-actions">
+        <a href="#appointment" class="btn btn-primary desktop-only">Записаться</a>
+        <div class="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-overlay">
+    <div class="mobile-menu">
+      <button class="mobile-close">Закрыть <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+      <nav class="mobile-nav">
+        <a href="index.html">Главная</a>
+        <a href="index.html#about">О центре</a>
+        <a href="services.html">Направления</a>
+        <a href="doctors.html">Врачи</a>
+        <a href="glavvrach.html">Главный врач</a>
+        <a href="index.html#contacts">Контакты</a>
+      </nav>
+      <div class="mobile-cta">
+        <a href="#appointment" class="btn btn-primary" style="width:100%;">Записаться на прием</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="images/hero-surgery.jpg" alt="Профессор Попов во время операции">
+    </div>
+    <div class="hero-inner">
+      <p class="hero-label reveal">С 1915 года — Санкт-Петербург</p>
+      <h1 class="hero-title reveal reveal-delay-1">
+        Городской центр<br>
+        эндоскопической<br>
+        урологии и новых<br>
+        технологий
+      </h1>
+      <p class="hero-subtitle reveal reveal-delay-2">
+        Высокотехнологичная помощь при заболеваниях урологического профиля. Бесплатное лечение по полису ОМС.
+      </p>
+      <div class="hero-actions reveal reveal-delay-3">
+        <a href="#appointment" class="btn btn-primary">Записаться на прием</a>
+        <a href="#online-consult" class="btn btn-outline-white">Онлайн-консультация</a>
+      </div>
+      <a href="tel:+78125761157" class="hero-phone reveal reveal-delay-4">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        +7 (812) 576-11-57
+      </a>
+    </div>
+  </section>
+
+  <!-- ====== ABOUT ====== -->
+  <section id="about" class="section section-alt">
+    <div class="container">
+      <div class="grid-2" style="align-items:center;">
+        <div>
+          <p class="section-label reveal">О ЦЕНТРЕ</p>
+          <h2 class="section-title reveal reveal-delay-1">Более века<br>урологического<br>совершенства</h2>
+          <p class="section-desc reveal reveal-delay-2">
+            Городской центр эндоскопической урологии и новых технологий создан по Распоряжению Комитета по здравоохранению Санкт-Петербурга для оказания высокотехнологичной помощи населению с заболеваниями урологического профиля.
+          </p>
+          <p style="margin-top:16px;color:var(--text-light);font-size:15px;line-height:1.7;" class="reveal reveal-delay-3">
+            Предоставляем бесплатное лечение при наличии полиса ОМС. Клиническая больница "Святителя Луки" — многопрофильный 374-коечный стационар с хирургическим, гинекологическим, терапевтическим, урологическим, гериатрическим, неврологическим и онкологическим отделениями.
+          </p>
+        </div>
+        <div class="grid-2" style="gap:16px;">
+          <div class="stat-item card reveal">
+            <span class="stat-number" data-counter="374">0</span>
+            <p class="stat-label">Коек в стационаре</p>
+          </div>
+          <div class="stat-item card reveal reveal-delay-1">
+            <span class="stat-number" data-counter="2009">0</span>
+            <p class="stat-label">Год создания центра</p>
+          </div>
+          <div class="stat-item card reveal reveal-delay-2">
+            <span class="stat-number" data-counter="1915">0</span>
+            <p class="stat-label">История с года</p>
+          </div>
+          <div class="stat-item card reveal reveal-delay-3">
+            <span class="stat-number" style="font-size:36px;margin-top:8px;">ОМС</span>
+            <p class="stat-label">Бесплатное лечение</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== DIRECTIONS ====== -->
+  <section id="directions" class="section section-dark">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:48px;">
+        <p class="section-label reveal">НАШИ НАПРАВЛЕНИЯ</p>
+        <h2 class="section-title reveal reveal-delay-1">Комплексная<br>урологическая помощь</h2>
+      </div>
+      <div class="grid-3">
+        <a href="services.html" class="dir-card-img reveal" style="background-image:url('images/dir-dgpzh.jpg');">
+          <h3 class="card-title">ДГПЖ</h3>
+          <p class="card-text">Лазерная энуклеация, лапароскопическая аденомэктомия, ТУР и ТУЭБ при любых размерах простаты</p>
+        </a>
+        <a href="services.html" class="dir-card-img reveal reveal-delay-1" style="background-image:url('images/dir-urolithiasis.jpg');">
+          <h3 class="card-title">Мочекаменная болезнь</h3>
+          <p class="card-text">ДЛТ, контактная литотрипсия, лапароскопическое удаление камней, перкутанная нефролитотрипсия</p>
+        </a>
+        <a href="services.html" class="dir-card-img reveal reveal-delay-2" style="background-image:url('images/dir-oncology.jpg');">
+          <h3 class="card-title">Онкоурология</h3>
+          <p class="card-text">Лечение рака почки, мочевого пузыря и простаты с применением малоинвазивных технологий</p>
+        </a>
+        <a href="services.html" class="dir-card-img reveal" style="background-image:url('images/dir-reconstructive.jpg');">
+          <h3 class="card-title">Реконструктивная урология</h3>
+          <p class="card-text">Лапароскопическая пластика, кишечная пластика мочеточника, лечение стриктур, нефропексия</p>
+        </a>
+        <a href="services.html" class="dir-card-img reveal reveal-delay-1" style="background-image:url('images/dir-reproductive.jpg');">
+          <h3 class="card-title">Репродуктивная урология</h3>
+          <p class="card-text">Лечение варикоцеле, операция Мармара, терапия преждевременного семяизвержения</p>
+        </a>
+        <a href="services.html" class="dir-card-img reveal reveal-delay-2" style="background-image:url('images/dir-functional.jpg');">
+          <h3 class="card-title">Функциональная урология</h3>
+          <p class="card-text">КУДИ, лечение недержания мочи, БОС-терапия, ботулинотерапия, диагностика интерстициального цистита</p>
+        </a>
+      </div>
+      <div style="text-align:center;margin-top:40px;">
+        <a href="services.html" class="btn btn-outline-white">Все направления</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CHIEF DOCTOR ====== -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="featured">
+        <div class="featured-img reveal">
+          <img src="images/popov-portrait.png" alt="Попов Сергей Валерьевич" style="aspect-ratio:3/4;object-fit:cover;">
+        </div>
+        <div>
+          <p class="section-label reveal">ГЛАВНЫЙ ВРАЧ</p>
+          <h2 class="section-title reveal reveal-delay-1">Профессор<br>Попов Сергей<br>Валерьевич</h2>
+          <p class="section-desc reveal reveal-delay-2" style="max-width:none;">
+            Главный врач КБ "Святителя Луки" | Руководитель Городского центра эндоскопической урологии
+          </p>
+          <p style="margin-top:16px;color:var(--text-light);font-size:16px;line-height:1.7;" class="reveal reveal-delay-2">
+            Доктор медицинских наук, ведущий специалист в области эндоскопической урологии. Возглавляет один из крупнейших урологических центров России.
+          </p>
+          <div class="featured-list reveal reveal-delay-3">
+            <div class="featured-list-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>Доктор медицинских наук</div>
+            <div class="featured-list-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Более 25 лет хирургической практики</div>
+            <div class="featured-list-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Руководитель центра с 2009 года</div>
+          </div>
+          <div style="display:flex;gap:12px;margin-top:28px;flex-wrap:wrap;" class="reveal reveal-delay-4">
+            <a href="glavvrach.html" class="btn btn-primary">Профиль главного врача <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            <a href="glavvrach.html#reception" class="btn btn-outline">Написать в приемную</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== ROBOTIC SURGERY ====== -->
+  <section class="section">
+    <div class="container">
+      <div class="featured" style="direction:rtl;">
+        <div class="featured-img reveal" style="direction:ltr;">
+          <img src="images/robot-surgery.jpg" alt="Роботическая хирургия" style="aspect-ratio:16/10;object-fit:cover;">
+        </div>
+        <div style="direction:ltr;">
+          <p class="section-label reveal reveal-delay-1">НОВЕЙШЕЕ НАПРАВЛЕНИЕ</p>
+          <h2 class="section-title reveal reveal-delay-2">Центр роботической хирургии</h2>
+          <p class="section-desc reveal reveal-delay-3" style="max-width:none;">
+            Робот-ассистированная хирургия открывает новые возможности в лечении сложных урологических заболеваний. Точность движений, минимальная травматичность и ускоренная реабилитация.
+          </p>
+          <div class="featured-list reveal reveal-delay-4">
+            <div class="featured-list-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Робот-ассистированная простатэктомия</div>
+            <div class="featured-list-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Паренхимосохраняющие операции на почке</div>
+            <div class="featured-list-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Минимальная травматичность и быстрая реабилитация</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SCIENTIFIC DEPARTMENT + DPO ====== -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="grid-2" style="align-items:start;">
+        <div>
+          <p class="section-label reveal">НАУКА И ИССЛЕДОВАНИЯ</p>
+          <h2 class="section-title reveal reveal-delay-1">Научный отдел</h2>
+          <p class="section-desc reveal reveal-delay-2" style="max-width:none;">
+            Научный отдел центра занимается развитием урологической помощи через непрерывные исследования, клинические испытания и разработку инновационных протоколов лечения.
+          </p>
+          <div style="margin-top:28px;" class="reveal reveal-delay-3">
+            <h4 style="font-size:16px;font-weight:600;color:var(--primary-dark);margin-bottom:14px;">Направления деятельности</h4>
+            <div style="display:flex;flex-direction:column;gap:12px;">
+              <div class="featured-list-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Клинические исследования в эндоскопической урологии</div>
+              <div class="featured-list-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Разработка и внедрение новых протоколов лечения</div>
+              <div class="featured-list-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Участие в международных конференциях (EAU, AUA, SIU)</div>
+              <div class="featured-list-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Публикации в рецензируемых медицинских журналах</div>
+              <div class="featured-list-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Обучение ординаторов и специалистов</div>
+            </div>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:16px;">
+          <div class="card reveal reveal-delay-1">
+            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+            <h4 style="font-size:16px;font-weight:600;color:var(--primary-dark);margin-bottom:8px;">Командировки</h4>
+            <p class="card-text">Регулярное участие в международных конгрессах по урологии и стажировки в ведущих европейских клиниках.</p>
+          </div>
+          <div class="card reveal reveal-delay-2">
+            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
+            <h4 style="font-size:16px;font-weight:600;color:var(--primary-dark);margin-bottom:8px;">Публикации</h4>
+            <p class="card-text">Более 150 публикаций в международных и российских рецензируемых журналах по эндоскопической хирургии.</p>
+          </div>
+          <div class="card reveal reveal-delay-3" style="border:2px solid var(--cyan);">
+            <div class="card-icon" style="background:var(--cyan-light);color:#006064;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.5 2.5 3 6 3s6-1.5 6-3v-5"/></svg></div>
+            <span class="card-tag card-tag-new">НОВОЕ</span>
+            <h4 style="font-size:16px;font-weight:600;color:var(--primary-dark);margin-bottom:8px;margin-top:8px;">Дополнительное профессиональное образование</h4>
+            <p class="card-text">Мастер-классы по эндоскопической урологии, стажировка ординаторов, подготовка к сертификации, выездные школы и семинары.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== NEWS (now before online consultation) ====== -->
+  <section id="news" class="section">
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:40px;flex-wrap:wrap;gap:16px;">
+        <div>
+          <p class="section-label reveal">НОВОСТИ</p>
+          <h2 class="section-title reveal reveal-delay-1">Новости и события</h2>
+        </div>
+      </div>
+      <div class="grid-3">
+        <div class="news-card reveal">
+          <p class="news-date">26 ИЮНЯ 2026</p>
+          <p class="news-title">Премьера сериала «ИИ будущего» с участием инновационных технологий нашего центра</p>
+        </div>
+        <div class="news-card reveal reveal-delay-1">
+          <p class="news-date">19 ИЮНЯ 2026</p>
+          <p class="news-title">Коллектив КБ «Святителя Луки» награжден Почетной грамотой Законодательного Собрания СПб</p>
+        </div>
+        <div class="news-card reveal reveal-delay-2">
+          <p class="news-date">21 АПРЕЛЯ 2026</p>
+          <p class="news-title">Камни в почках: современные методы диагностики и лечения в нашем центре</p>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:48px;">
+        <h4 style="font-size:18px;font-weight:600;color:var(--primary-dark);margin-bottom:8px;" class="reveal">Что планируется</h4>
+        <p style="color:var(--text-light);font-size:14px;max-width:500px;margin:0 auto;" class="reveal">
+          Следите за обновлениями: новые услуги, международные партнерства, предстоящие конференции и научные мероприятия.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== ONLINE CONSULTATION (now after news) ====== -->
+  <section id="online-consult" class="section" style="background:linear-gradient(135deg,var(--primary-dark),var(--primary));">
+    <div class="container" style="text-align:center;max-width:720px;">
+      <div class="reveal" style="display:inline-flex;align-items:center;justify-content:center;width:72px;height:72px;border-radius:50%;background:rgba(0,188,212,0.15);margin-bottom:24px;">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+      </div>
+      <h2 class="section-title reveal reveal-delay-1" style="color:#fff;">Онлайн-консультация</h2>
+      <p class="section-desc reveal reveal-delay-2" style="color:rgba(255,255,255,0.85);max-width:none;margin-left:auto;margin-right:auto;">
+        Получите экспертную урологическую консультацию, не выходя из дома. Наши специалисты проводят удаленные видеоконсультации.
+      </p>
+      <div style="display:flex;gap:32px;justify-content:center;margin-top:32px;flex-wrap:wrap;" class="reveal reveal-delay-3">
+        <div style="display:flex;align-items:center;gap:8px;color:#fff;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg><span style="font-size:14px;font-weight:500;">Видеозвонок</span></div>
+        <div style="display:flex;align-items:center;gap:8px;color:#fff;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span style="font-size:14px;font-weight:500;">В день обращения</span></div>
+        <div style="display:flex;align-items:center;gap:8px;color:#fff;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg><span style="font-size:14px;font-weight:500;">Врачи-эксперты</span></div>
+      </div>
+      <div class="reveal reveal-delay-4" style="margin-top:36px;">
+        <a href="#appointment" class="btn btn-white">Записаться на консультацию</a>
+        <p style="color:rgba(255,255,255,0.7);font-size:14px;margin-top:16px;">Или позвоните <a href="tel:+78125761157" style="color:#fff;text-decoration:underline;">+7 (812) 576-11-57</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CTA ====== -->
+  <section id="appointment" class="cta-section" style="background:linear-gradient(135deg,var(--accent),var(--primary));">
+    <div class="container">
+      <h2 class="section-title reveal" style="color:#fff;margin-bottom:16px;">Сделайте первый шаг<br>к здоровью</h2>
+      <p class="section-desc reveal reveal-delay-1" style="color:rgba(255,255,255,0.85);max-width:600px;margin:0 auto;">
+        Наша команда опытных специалистов готова оказать вам комплексную помощь с использованием новейших медицинских технологий. Бесплатное лечение по ОМС.
+      </p>
+      <div class="cta-actions reveal reveal-delay-2">
+        <a href="tel:+78125761157" class="btn btn-white" style="font-size:16px;text-transform:none;letter-spacing:0;font-weight:600;">+7 (812) 576-11-57</a>
+        <a href="#" class="btn btn-outline-white">Записаться на прием</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer id="contacts" class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo-name">ГОРУРОЦЕНТР</span>
+        <p>Городской центр эндоскопической урологии и новых технологий Санкт-Петербурга</p>
+        <p style="margin-top:8px;font-size:12px;color:rgba(255,255,255,0.5);">С 1915 года</p>
+      </div>
+      <div>
+        <h4 class="footer-title">Навигация</h4>
+        <div class="footer-links">
+          <a href="index.html">Главная</a>
+          <a href="services.html">Направления</a>
+          <a href="doctors.html">Врачи</a>
+          <a href="glavvrach.html">Главный врач</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-title">Направления</h4>
+        <div class="footer-links">
+          <a href="services.html">ДГПЖ</a>
+          <a href="services.html">Мочекаменная болезнь</a>
+          <a href="services.html">Онкоурология</a>
+          <a href="services.html">Роботическая хирургия</a>
+          <a href="services.html">Трансплантация почки</a>
+          <a href="services.html">Rezum</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-title">Контакты</h4>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +7 (812) 576-11-57
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          info@endourocenter.ru
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Санкт-Петербург, КБ "Святителя Луки"
+        </div>
+        <a href="#" class="btn btn-primary" style="margin-top:12px;">Записаться</a>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 ГорУроЦентр. Все права защищены.</div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
