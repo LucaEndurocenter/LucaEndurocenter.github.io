@@ -1,470 +1,239 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Диагностика — Городской центр эндоскопической урологии</title>
-    <meta
-      name="description"
-      content="Диагностика в Городском центре эндоскопической урологии: КТ, МРТ 3 Тл, УЗИ, цистоскопия, уродинамика, клинико-диагностическая лаборатория."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css?v=20260904" />
-  </head>
-  <body class="has-hero diagnostika-page">
-    <!-- Header -->
-    <header class="header">
-      <div class="header-inner">
-        <a href="index.html" class="header-logo">
-          <img src="images/logo.svg" alt="Логотип Урологического Центра" />
-          <span class="header-logo-text"
-            >Городской центр эндоскопической урологии</span
-          >
-        </a>
-        <nav class="header-nav">
-          <div class="nav-item has-dropdown">
-            <a href="index.html" class="active"
-              >О центре<svg
-                class="nav-caret"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2.4"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <polyline points="6 9 12 15 18 9" /></svg
-            ></a>
-            <div class="dropdown-menu">
-              <a href="history.html">История</a>
-              <a href="patients.html">Пациентам</a>
-              <a href="science.html">Научный отдел</a>
-              <a href="dpo.html">ДПО (для специалистов)</a>
-              <a href="diagnostika.html" class="active">Диагностика</a>
-              <a href="gallery.html">Фотогалерея</a>
-              <a href="news.html">Новости</a>
-            </div>
-          </div>
-          <a href="directions.html">Направления</a>
-          <a href="doctors.html">Врачи</a>
-          <a href="specialist.html">Главный внештатный специалист</a>
-        </nav>
-        <div class="header-right">
-          <button
-            class="search-toggle"
-            type="button"
-            aria-label="Поиск по сайту"
-            aria-expanded="false"
-          >
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-            >
-              <circle cx="11" cy="11" r="7" />
-              <line x1="21" y1="21" x2="16.5" y2="16.5" />
-            </svg>
-          </button>
-          <a href="tel:+78125761157" class="header-phone">+7 (812) 57-611-57</a>
-          <a href="appointment.html" class="btn btn-primary">Записаться</a>
-        </div>
-        <button class="menu-toggle" aria-label="Открыть меню">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Диагностика — Городской центр эндоскопической урологии</title>
+  <meta name="description" content="Диагностика в Городском центре эндоскопической урологии: КТ, МРТ 3 Тл, УЗИ, цистоскопия, уродинамика, клинико-диагностическая лаборатория.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=20260906">
+</head>
+<body class="has-hero diagnostika-page">
 
-    <!-- Mobile Menu -->
-    <div class="mobile-overlay"></div>
-    <nav class="mobile-menu">
-      <div class="mobile-nav-parent">
-        <a href="index.html" class="active">О центре</a>
-        <button
-          type="button"
-          class="mobile-submenu-toggle"
-          aria-expanded="false"
-          aria-label="Развернуть подменю"
-        >
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <polyline points="6 9 12 15 18 9" />
-          </svg>
-        </button>
-      </div>
-      <div class="mobile-submenu">
-        <a href="history.html">История</a>
-        <a href="patients.html">Пациентам</a>
-        <a href="science.html">Научный отдел</a>
-        <a href="dpo.html">ДПО (для специалистов)</a>
-        <a href="diagnostika.html" class="active">Диагностика</a>
-        <a href="gallery.html">Фотогалерея</a>
-        <a href="news.html">Новости</a>
-      </div>
-      <a href="directions.html">Направления</a>
-      <a href="doctors.html">Врачи</a>
-      <a href="specialist.html">Главный внештатный специалист</a>
-      <a href="tel:+78125761157">+7 (812) 57-611-57</a>
-      <a href="appointment.html" class="mobile-cta btn btn-primary"
-        >Записаться</a
-      >
-    </nav>
-
-    <!-- Sticky Phone -->
-    <a href="tel:+78125761157" class="sticky-phone" aria-label="Позвонить">
-      <svg viewBox="0 0 24 24">
-        <path
-          d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
-        />
-      </svg>
-    </a>
-
-    <main>
-      <!-- Page Hero -->
-      <section class="page-hero">
-        <div
-          class="page-hero-bg"
-          style="background-image: url(&quot;images/diagnost.jpg&quot;)"
-        ></div>
-        <div class="page-hero-overlay"></div>
-        <div class="container">
-          <div class="page-hero-content">
-            <h1>Диагностика</h1>
-            <p>
-              Полный спектр современной урологической диагностики в одном
-              центре: лаборатория, КТ, МРТ, УЗИ, эндоскопические и
-              уродинамические исследования.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Инструментальная диагностика -->
-      <section class="page-section">
-        <div class="container">
-          <div class="section-header reveal">
-            <h2>Инструментальная диагностика</h2>
-            <p>
-              Оборудование экспертного класса для точной постановки диагноза
-            </p>
-          </div>
-          <div class="info-grid stagger-children">
-            <div class="info-card reveal-child">
-              <h3>
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <circle cx="12" cy="12" r="9" />
-                  <circle cx="12" cy="12" r="3" /></svg
-                >Компьютерная томография (КТ)
-              </h3>
-              <p>
-                Мультиспиральная компьютерная томография с возможностью
-                контрастного усиления: оценка мочевых камней, новообразований,
-                анатомии мочевыводящих путей и сосудистых структур перед
-                оперативным лечением.
-              </p>
-            </div>
-            <div class="info-card reveal-child">
-              <h3>
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <rect x="3" y="4" width="18" height="16" rx="3" />
-                  <path d="M3 12h18" /></svg
-                >Магнитно-резонансная томография (МРТ)
-              </h3>
-              <p>
-                Кабинет МРТ оснащён томографом «Магнетом Вида» с напряжённостью
-                магнитного поля 3 Тл: высокодетальная визуализация мягких тканей
-                малого таза, простаты, почек и забрюшинного пространства.
-              </p>
-            </div>
-            <div class="info-card reveal-child">
-              <h3>
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path d="M12 3v3M12 18v3M3 12h3M18 12h3" />
-                  <circle cx="12" cy="12" r="6" /></svg
-                >УЗИ диагностика
-              </h3>
-              <p>
-                Ультразвуковые исследования органов мочевыводящей системы,
-                мошонки и предстательной железы, в том числе с оценкой
-                кровотока. В операционных используется отдельный ультразвуковой
-                аппарат для интраоперационного контроля.
-              </p>
-            </div>
-            <div class="info-card reveal-child">
-              <h3>
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path d="M4 20h16M6 16l4-8 4 5 4-9" /></svg
-                >Рентгенодиагностика
-              </h3>
-              <p>
-                Ретроградная уретрография, микционная цистоуретрография и другие
-                контрастные исследования мочевых путей. Эндоваскулярные
-                вмешательства выполняются на ангиографическом комплексе
-                «Дискавери IGS 7 OR» («Дженерал Электрик») в составе гибридной
-                операционной.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Эндоскопическая и функциональная -->
-      <section class="page-section alt">
-        <div class="container">
-          <div class="section-header reveal">
-            <h2>Эндоскопическая и функциональная диагностика</h2>
-          </div>
-          <div class="info-grid stagger-children">
-            <div class="info-card reveal-child">
-              <h3>Уретроскопия и цистоскопия</h3>
-              <p>
-                Эндоскопическая оценка состояния уретры и мочевого пузыря:
-                стриктуры, новообразования, камни, источники кровотечения. При
-                необходимости выполняется прицельная биопсия.
-              </p>
-            </div>
-            <div class="info-card reveal-child">
-              <h3>Урофлоуметрия</h3>
-              <p>
-                Объективная оценка мочеиспускания: скорость потока мочи, его
-                характер и объём, УЗИ остаточной мочи. Базовый метод при
-                подозрении на инфравезикальную обструкцию.
-              </p>
-            </div>
-            <div class="info-card reveal-child">
-              <h3>Комплексное уродинамическое исследование (КУДИ)</h3>
-              <p>
-                Цистометрия наполнения, исследование «давление–поток» и
-                профилометрия: точная диагностика нарушений накопления и
-                опорожнения мочевого пузыря, в том числе нейрогенной дисфункции.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Лаборатория -->
-      <section class="page-section">
-        <div class="container">
-          <div class="section-header reveal">
-            <h2>Клинико-диагностическая лаборатория</h2>
-          </div>
-          <div class="info-grid two stagger-children">
-            <div class="info-card reveal-child">
-              <h3>Общеклинические и биохимические исследования</h3>
-              <p>
-                Полный спектр лабораторных анализов для предоперационной
-                подготовки и контроля лечения: общий анализ крови и мочи,
-                биохимия, коагулограмма, онкомаркеры, включая ПСА.
-              </p>
-            </div>
-            <div class="info-card reveal-child">
-              <h3>Специализированные исследования</h3>
-              <p>
-                Спермограмма, гормональная панель (ФСГ, ЛГ, тестостерон,
-                пролактин), микробиологические исследования и генетическое
-                тестирование при нарушениях репродуктивной функции.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- CTA -->
-      <section class="cta-banner">
-        <div class="container">
-          <div class="cta-content reveal-scale">
-            <h2>Записаться на диагностику</h2>
-            <p>Позвоните нам — подберём удобное время обследования</p>
-            <p class="phone">+7 (812) 57-611-57</p>
-            <a href="tel:+78125761157" class="btn btn-white">Позвонить</a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-grid">
-          <div class="footer-col">
-            <div class="footer-logo">
-              <img src="images/logo.svg" alt="Логотип" />
-            </div>
-            <p class="footer-desc">
-              Городской центр эндоскопической урологии и новых технологий
-              Санкт-Петербурга
-            </p>
-          </div>
-          <div class="footer-col">
-            <h4>Навигация</h4>
-
-            <a href="index.html">О центре</a>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="header-logo">
+        <img src="images/logo.svg" alt="Логотип Урологического Центра">
+        <span class="header-logo-text">Городской центр эндоскопической урологии</span>
+      </a>
+      <nav class="header-nav">
+        <div class="nav-item has-dropdown">
+          <a href="index.html" class="active">О центре<svg class="nav-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></a>
+          <div class="dropdown-menu">
             <a href="history.html">История</a>
             <a href="patients.html">Пациентам</a>
             <a href="science.html">Научный отдел</a>
             <a href="dpo.html">ДПО (для специалистов)</a>
-            <a href="diagnostika.html">Диагностика</a>
+            <a href="diagnostika.html" class="active">Диагностика</a>
             <a href="gallery.html">Фотогалерея</a>
             <a href="news.html">Новости</a>
-            <a href="directions.html">Направления</a>
-            <a href="doctors.html">Врачи</a>
-            <a href="specialist.html">Главный внештатный специалист</a>
-          </div>
-          <div class="footer-col">
-            <h4>Контакты</h4>
-            <a href="tel:+78125761157" class="footer-contact"
-              ><svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
-                /></svg
-              ><span>+7 (812) 57-611-57</span></a
-            >
-            <a href="mailto:info@endourocenter.ru" class="footer-contact"
-              ><svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <rect x="2" y="4" width="20" height="16" rx="2" />
-                <path d="M22 6l-10 7L2 6" /></svg
-              ><span>info@endourocenter.ru</span></a
-            >
-            <p class="footer-contact">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                <circle cx="12" cy="10" r="3" /></svg
-              ><span
-                >Санкт-Петербург, ул. Чугунная, д. 46,<br />урологическое
-                отделение, 2 этаж</span
-              >
-            </p>
-            <div class="footer-social">
-              <a
-                href="https://www.youtube.com/channel/UCXZlemTUK0ECRMNh_DsWmQg"
-                target="_blank"
-                rel="noopener"
-                aria-label="YouTube"
-              >
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path
-                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
-                  />
-                </svg>
-              </a>
-              <a
-                href="https://vk.com/endourocenter"
-                target="_blank"
-                rel="noopener"
-                aria-label="ВКонтакте"
-              >
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path
-                    d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486 1.801-2.339 4.157-5.336 2.073-5.336h-3.981c-.772 0-.828.435-1.103 1.366-.995 2.388-1.805 5.146-3.318 5.146-.617 0-.858-.406-.858-.928 0-1.626.327-3.222.327-4.933 0-1.803-1.177-1.803-3.339-1.803-1.272 0-2.686.175-3.758.517-.523.167-.523.454-.523.901 0 .649.471.801.471 2.915 0 4.019-.942 5.033-2.19 5.033-1.248 0-2.809-2.624-3.97-5.745-.304-.874-.585-1.379-1.384-1.379H.916c-.772 0-.927.435-.927.927 0 .866.404 2.655 1.731 5.3 2.002 4.001 4.809 6.571 8.441 6.571z"
-                  />
-                </svg>
-              </a>
-              <a
-                href="https://zen.yandex.ru/lucaclinic"
-                target="_blank"
-                rel="noopener"
-                aria-label="Яндекс.Дзен"
-              >
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path
-                    d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 8.16c-.169 1.858-.903 2.732-2.882 3.989-.967.613-1.559 1.021-1.559 1.83 0 .955.721 1.681 1.68 1.681 1.011 0 1.723-.794 1.864-1.917h2.129c-.127 2.537-1.969 4.17-4.023 4.17-2.224 0-3.913-1.637-3.913-3.913 0-2.028 1.42-2.875 3.027-3.803 1.274-.737 1.583-1.063 1.696-2.037H9.116V8.16h6.452z"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="footer-col">
-            <h4>Часы работы</h4>
-            <div class="footer-hours">
-              <p>
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <circle cx="12" cy="12" r="10" />
-                  <polyline points="12 6 12 12 16 14" /></svg
-                ><span class="fh-days">Пн&ndash;Пт</span
-                ><span class="fh-time">8:30 &ndash; 20:00</span>
-              </p>
-              <p>
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <circle cx="12" cy="12" r="10" />
-                  <polyline points="12 6 12 12 16 14" /></svg
-                ><span class="fh-days">Сб&ndash;Вс</span
-                ><span class="fh-time">8:30 &ndash; 17:00</span>
-              </p>
-            </div>
           </div>
         </div>
-        <div class="footer-divider"></div>
-        <div class="footer-bottom">
-          <span
-            >© 2026 Городской центр эндоскопической урологии. Все права
-            защищены.</span
-          >
-          <span>Лицензия № ЛО-78-01-010769</span>
+        <a href="directions.html">Направления</a>
+        <a href="doctors.html">Врачи</a>
+        <a href="specialist.html">Главный внештатный специалист</a>
+      </nav>
+      <div class="header-right">
+        <button class="search-toggle" type="button" aria-label="Поиск по сайту" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg></button>
+        <a href="tel:+78125761157" class="header-phone">+7 (812) 57-611-57</a>
+        <a href="appointment.html" class="btn btn-primary">Записаться</a>
+      </div>
+      <button class="menu-toggle" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-overlay"></div>
+  <nav class="mobile-menu">
+    <div class="mobile-nav-parent">
+      <a href="index.html" class="active">О центре</a>
+      <button type="button" class="mobile-submenu-toggle" aria-expanded="false" aria-label="Развернуть подменю"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+    </div>
+    <div class="mobile-submenu">
+      <a href="history.html">История</a>
+      <a href="patients.html">Пациентам</a>
+      <a href="science.html">Научный отдел</a>
+      <a href="dpo.html">ДПО (для специалистов)</a>
+      <a href="diagnostika.html" class="active">Диагностика</a>
+      <a href="gallery.html">Фотогалерея</a>
+      <a href="news.html">Новости</a>
+    </div>
+    <a href="directions.html">Направления</a>
+    <a href="doctors.html">Врачи</a>
+    <a href="specialist.html">Главный внештатный специалист</a>
+    <a href="tel:+78125761157">+7 (812) 57-611-57</a>
+    <a href="appointment.html" class="mobile-cta btn btn-primary">Записаться</a>
+  </nav>
+
+  <!-- Sticky Phone -->
+  <a href="tel:+78125761157" class="sticky-phone" aria-label="Позвонить">
+    <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+  </a>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="page-hero-bg" style="background-image: url('images/diagnost.jpg'), url('images/history-2022-mrt.jpg');"></div>
+      <div class="page-hero-overlay"></div>
+      <div class="container">
+        <div class="page-hero-content">
+          <h1>Диагностика</h1>
+          <p>Полный спектр современной урологической диагностики в одном центре: лаборатория, КТ, МРТ, УЗИ, эндоскопические и уродинамические исследования.</p>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <script src="js/main.js?v=20260904"></script>
-    <script src="js/search.js?v=20260904" defer></script>
-  </body>
+    <!-- Инструментальная диагностика -->
+    <section class="page-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Инструментальная диагностика</h2>
+          <p>Оборудование экспертного класса для точной постановки диагноза</p>
+        </div>
+        <div class="info-grid stagger-children">
+          <div class="info-card reveal-child">
+            <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg>Компьютерная томография (КТ)</h3>
+            <p>Мультиспиральная компьютерная томография с возможностью контрастного усиления: оценка мочевых камней, новообразований, анатомии мочевыводящих путей и сосудистых структур перед оперативным лечением.</p>
+            <figure class="content-photo">
+              <img src="images/diagnost-kt.jpg" alt="Кабинет компьютерной томографии" loading="lazy">
+              <figcaption>Кабинет компьютерной томографии</figcaption>
+            </figure>
+          </div>
+          <div class="info-card reveal-child">
+            <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 12h18"/></svg>Магнитно-резонансная томография (МРТ)</h3>
+            <p>Кабинет МРТ оснащён томографом «Магнетом Вида» с напряжённостью магнитного поля 3 Тл: высокодетальная визуализация мягких тканей малого таза, простаты, почек и забрюшинного пространства.</p>
+          </div>
+          <div class="info-card reveal-child">
+            <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><circle cx="12" cy="12" r="6"/></svg>УЗИ диагностика</h3>
+            <p>Ультразвуковые исследования органов мочевыводящей системы, мошонки и предстательной железы, в том числе с оценкой кровотока. В операционных используется отдельный ультразвуковой аппарат для интраоперационного контроля.</p>
+          </div>
+          <div class="info-card reveal-child">
+            <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20h16M6 16l4-8 4 5 4-9"/></svg>Рентгенодиагностика</h3>
+            <p>Ретроградная уретрография, микционная цистоуретрография и другие контрастные исследования мочевых путей. Эндоваскулярные вмешательства выполняются на ангиографическом комплексе «Дискавери IGS 7 OR» («Дженерал Электрик») в составе гибридной операционной.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Эндоскопическая и функциональная -->
+    <section class="page-section alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Эндоскопическая и функциональная диагностика</h2>
+        </div>
+        <div class="info-grid stagger-children">
+          <div class="info-card reveal-child">
+            <h3>Уретроскопия и цистоскопия</h3>
+            <p>Эндоскопическая оценка состояния уретры и мочевого пузыря: стриктуры, новообразования, камни, источники кровотечения. При необходимости выполняется прицельная биопсия.</p>
+          </div>
+          <div class="info-card reveal-child">
+            <h3>Урофлоуметрия</h3>
+            <p>Объективная оценка мочеиспускания: скорость потока мочи, его характер и объём, УЗИ остаточной мочи. Базовый метод при подозрении на инфравезикальную обструкцию.</p>
+          </div>
+          <div class="info-card reveal-child">
+            <h3>Комплексное уродинамическое исследование (КУДИ)</h3>
+            <p>Цистометрия наполнения, исследование «давление–поток» и профилометрия: точная диагностика нарушений накопления и опорожнения мочевого пузыря, в том числе нейрогенной дисфункции.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Лаборатория -->
+    <section class="page-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Клинико-диагностическая лаборатория</h2>
+        </div>
+        <div class="info-grid two stagger-children">
+          <div class="info-card reveal-child">
+            <h3>Общеклинические и биохимические исследования</h3>
+            <p>Полный спектр лабораторных анализов для предоперационной подготовки и контроля лечения: общий анализ крови и мочи, биохимия, коагулограмма, онкомаркеры, включая ПСА.</p>
+          </div>
+          <div class="info-card reveal-child">
+            <h3>Специализированные исследования</h3>
+            <p>Спермограмма, гормональная панель (ФСГ, ЛГ, тестостерон, пролактин), микробиологические исследования и генетическое тестирование при нарушениях репродуктивной функции.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+      <div class="container">
+        <div class="cta-content reveal-scale">
+          <h2>Записаться на диагностику</h2>
+          <p>Позвоните нам — подберём удобное время обследования</p>
+          <p class="phone">+7 (812) 57-611-57</p>
+          <a href="tel:+78125761157" class="btn btn-white">Позвонить</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+    <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="images/logo.svg" alt="Логотип">
+          </div>
+          <p class="footer-desc">Городской центр эндоскопической урологии и новых технологий Санкт-Петербурга</p>
+        </div>
+        <div class="footer-col">
+          <h4>Навигация</h4>
+
+          <a href="index.html">О центре</a>
+          <a href="history.html">История</a>
+          <a href="patients.html">Пациентам</a>
+          <a href="science.html">Научный отдел</a>
+          <a href="dpo.html">ДПО (для специалистов)</a>
+          <a href="diagnostika.html">Диагностика</a>
+          <a href="gallery.html">Фотогалерея</a>
+          <a href="news.html">Новости</a>
+          <a href="directions.html">Направления</a>
+          <a href="doctors.html">Врачи</a>
+          <a href="specialist.html">Главный внештатный специалист</a>
+        </div>
+        <div class="footer-col">
+          <h4>Контакты</h4>
+          <a href="tel:+78125761157" class="footer-contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>+7 (812) 57-611-57</span></a>
+          <a href="mailto:info@endourocenter.ru" class="footer-contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg><span>info@endourocenter.ru</span></a>
+          <p class="footer-contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Санкт-Петербург, ул. Чугунная, д. 46</span></p>
+          <div class="footer-social">
+            <a href="https://vk.com/endourocenter" target="_blank" rel="noopener" aria-label="ВКонтакте">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486 1.801-2.339 4.157-5.336 2.073-5.336h-3.981c-.772 0-.828.435-1.103 1.366-.995 2.388-1.805 5.146-3.318 5.146-.617 0-.858-.406-.858-.928 0-1.626.327-3.222.327-4.933 0-1.803-1.177-1.803-3.339-1.803-1.272 0-2.686.175-3.758.517-.523.167-.523.454-.523.901 0 .649.471.801.471 2.915 0 4.019-.942 5.033-2.19 5.033-1.248 0-2.809-2.624-3.97-5.745-.304-.874-.585-1.379-1.384-1.379H.916c-.772 0-.927.435-.927.927 0 .866.404 2.655 1.731 5.3 2.002 4.001 4.809 6.571 8.441 6.571z"/></svg>
+            </a>
+            <a href="https://zen.yandex.ru/lucaclinic" target="_blank" rel="noopener" aria-label="Яндекс.Дзен">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 8.16c-.169 1.858-.903 2.732-2.882 3.989-.967.613-1.559 1.021-1.559 1.83 0 .955.721 1.681 1.68 1.681 1.011 0 1.723-.794 1.864-1.917h2.129c-.127 2.537-1.969 4.17-4.023 4.17-2.224 0-3.913-1.637-3.913-3.913 0-2.028 1.42-2.875 3.027-3.803 1.274-.737 1.583-1.063 1.696-2.037H9.116V8.16h6.452z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Часы работы</h4>
+          <div class="footer-hours">
+            <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span class="fh-days">Пн&ndash;Пт</span><span class="fh-time">8:30 &ndash; 20:00</span></p>
+            <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span class="fh-days">Сб&ndash;Вс</span><span class="fh-time">8:30 &ndash; 17:00</span></p>
+          </div>
+          
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <span>© 2026 Городской центр эндоскопической урологии. Все права защищены.</span>
+        <span>Лицензия № ЛО-78-01-010769</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js?v=20260906"></script>
+  <script src="js/search.js?v=20260906" defer></script>
+</body>
 </html>
