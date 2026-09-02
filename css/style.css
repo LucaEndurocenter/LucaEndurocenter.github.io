@@ -57,6 +57,16 @@
   box-sizing: border-box;
 }
 
+.justified-text {
+  text-align: justify;
+  text-align-last: left; /* последняя строка абзаца остаётся слева, а не растягивается */
+  hyphens: auto; /* включает переносы слов, чтобы избежать больших пробелов */
+}
+
+.my-block p {
+  margin-bottom: 10px; /* расстояние между абзацами */
+}
+
 html {
   scroll-behavior: smooth;
   font-size: 16px;
