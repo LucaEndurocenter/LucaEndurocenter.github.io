@@ -29,14 +29,14 @@
 }
 .hero-video {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 12px;
+  left: 12px;
+  width: calc(100% - 24px);
+  height: calc(100% - 24px);
   object-fit: cover;
   z-index: 0;
   pointer-events: none;
-  border-radius: 50px;
+  border-radius: 40px;
   overflow: hidden;
   background-color: #ffffff;
 }
@@ -61,6 +61,43 @@
   text-align: justify;
   text-align-last: left; /* последняя строка абзаца остаётся слева, а не растягивается */
   hyphens: auto; /* включает переносы слов, чтобы избежать больших пробелов */
+}
+
+/* ====== Выравнивание основного текста по ширине ======
+   Применяется к текстовому контенту страниц. Не затрагивает:
+   шапку и подвал (они вне main), новости, заголовки и имена врачей (h1-h4),
+   а также центрированные служебные блоки. */
+main p,
+main li {
+  text-align: justify;
+  text-align-last: left;
+  hyphens: auto;
+}
+
+/* Подзаголовки под названиями и служебные подписи — остаются как были
+   (выравнивание наследуется от своего блока, justify не применяется) */
+main .section-header > p, main .section-head > p,
+main .hero-content p, main .page-hero-content p, main .specialist-hero-content p,
+.profile-card-role, .profile-card-exp,
+.teacher-role, .appt-card-role, .appt-card-spec,
+.review-author, .review-date, .dm-lead, .question-form-desc, .science-desc,
+main .cta-content p, main .review-cta p,
+.section-more-wrap p, .page-lead, .patients-note,
+.directions-cta p, .doctors-cta p, .no-results p,
+.directions-grid.compact .direction-card-body p,
+.leader-card p, .contact-card p, .content-photo figcaption,
+.modal-cta p, .dpo-hero-course p {
+  text-align: inherit;
+  text-align-last: auto;
+  hyphens: none;
+}
+
+/* Новости — без выравнивания по ширине */
+.news-block p, .news-card p, .news-card-page p, .news-preview p,
+.tg-card p {
+  text-align: left;
+  text-align-last: left;
+  hyphens: none;
 }
 
 .my-block p {
@@ -231,14 +268,15 @@ h4 {
 /* ---- Header ---- */
 .header {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: 10px;
+  left: 12px;
+  right: 12px;
   height: 80px;
   z-index: 1000;
   transition: var(--transition);
   background: var(--white);
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.06);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
 }
 
 /* Hero pages: transparent header with white text */
@@ -841,7 +879,8 @@ body.has-hero .header .menu-toggle span {
 
 .hero-overlay {
   position: absolute;
-  inset: 0;
+  inset: 12px;
+  border-radius: 40px;
   background: linear-gradient(
     180deg,
     rgba(15, 29, 51, 0.82) 0%,
@@ -2747,7 +2786,7 @@ body.has-hero .header .menu-toggle span {
 /* ---- Doctors filter bar (страница «Врачи») ---- */
 .filter-bar {
   position: sticky;
-  top: 80px;
+  top: 90px;
   z-index: 50;
   background: var(--white);
   border-bottom: 1px solid var(--border-light);
@@ -4055,7 +4094,16 @@ a.doctor-card {
   line-height: 1.7;
 }
 .info-card ul li {
+  position: relative;
   margin-bottom: 6px;
+  padding-left: 16px;
+}
+.info-card ul li::before {
+  content: "\2013"; /* тире-маркер */
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: 700;
 }
 .patients-note {
   margin-top: 36px;
@@ -5012,9 +5060,10 @@ body.has-hero .header:not(.scrolled) .search-toggle:hover {
 
 .site-search {
   position: fixed;
-  top: 80px;
-  left: 0;
-  right: 0;
+  top: 92px;
+  left: 12px;
+  right: 12px;
+  border-radius: 16px;
   z-index: 999;
   background: #fff;
   border-bottom: 1px solid var(--border-light);
@@ -5893,19 +5942,23 @@ a.info-card-link:hover .dir-card-arrow {
   background: var(--primary);
 }
 .dir-modal-dialog {
-  scrollbar-width: thin;
-  scrollbar-color: #b9d6ee transparent;
+  scrollbar-width: auto;
+  scrollbar-color: var(--primary) #e8f1fa;
 }
 .dir-modal-dialog::-webkit-scrollbar {
-  width: 6px;
+  width: 10px;
+}
+.dir-modal-dialog::-webkit-scrollbar-track {
+  background: #e8f1fa;
+  border-radius: 8px;
 }
 .dir-modal-dialog::-webkit-scrollbar-thumb {
-  background: #c4dcf1;
+  background: var(--primary);
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
 }
 .dir-modal-dialog::-webkit-scrollbar-thumb:hover {
-  background: var(--primary);
+  background: #1e6bb8;
 }
 
 /* ===== Photo inside direction modal ===== */
@@ -6967,4 +7020,30 @@ a.footer-contact:hover svg {
   font-size: 0.9rem;
   color: var(--text-secondary);
   text-align: center;
+}
+
+/* ===== Мобильная геометрия плавающей шапки и видео ===== */
+@media (max-width: 768px) {
+  .header {
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    border-radius: 14px;
+  }
+  .hero-video {
+    top: 8px;
+    left: 8px;
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
+    border-radius: 22px;
+  }
+  .hero-overlay {
+    inset: 8px;
+    border-radius: 22px;
+  }
+  .site-search {
+    top: 84px;
+    left: 8px;
+    right: 8px;
+  }
 }
