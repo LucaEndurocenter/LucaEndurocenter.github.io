@@ -29,14 +29,14 @@
 }
 .hero-video {
   position: absolute;
-  top: 12px;
-  left: 12px;
-  width: calc(100% - 24px);
-  height: calc(100% - 24px);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   z-index: 0;
   pointer-events: none;
-  border-radius: 40px;
+  border-radius: 0 0 40px 40px;
   overflow: hidden;
   background-color: #ffffff;
 }
@@ -86,7 +86,7 @@ main .cta-content p, main .review-cta p,
 .directions-cta p, .doctors-cta p, .no-results p,
 .directions-grid.compact .direction-card-body p,
 .leader-card p, .contact-card p, .content-photo figcaption,
-.modal-cta p, .dpo-hero-course p {
+.modal-cta p, .dpo-hero-course p, .stats-band-header p {
   text-align: inherit;
   text-align-last: auto;
   hyphens: none;
@@ -558,6 +558,7 @@ body.has-hero .header .menu-toggle span {
   color: var(--white);
   padding-top: 80px;
   padding-bottom: 40px;
+  border-radius: 40px 40px 0 0;
 }
 
 .footer-grid {
@@ -879,8 +880,8 @@ body.has-hero .header .menu-toggle span {
 
 .hero-overlay {
   position: absolute;
-  inset: 12px;
-  border-radius: 40px;
+  inset: 0;
+  border-radius: 0 0 40px 40px;
   background: linear-gradient(
     180deg,
     rgba(15, 29, 51, 0.82) 0%,
@@ -1100,6 +1101,7 @@ body.has-hero .header .menu-toggle span {
   color: var(--white);
   position: relative;
   overflow: hidden;
+  border-radius: 40px;
 }
 
 .robotic::before {
@@ -3086,6 +3088,7 @@ body.has-hero .header .menu-toggle span {
     var(--dark-blue-deep) 100%
   );
   padding: 70px 0;
+  border-radius: 40px;
 }
 
 .stats-band-header {
@@ -3298,7 +3301,7 @@ body.has-hero .header .menu-toggle span {
 
 .contact-cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
@@ -4093,12 +4096,12 @@ a.doctor-card {
   font-size: 15px;
   line-height: 1.7;
 }
-.info-card ul li {
+.info-card ul:not(.info-list) li {
   position: relative;
   margin-bottom: 6px;
   padding-left: 16px;
 }
-.info-card ul li::before {
+.info-card ul:not(.info-list) li::before {
   content: "\2013"; /* тире-маркер */
   position: absolute;
   left: 0;
@@ -6838,6 +6841,16 @@ a.footer-contact:hover svg {
   background: rgba(255, 255, 255, 0.07);
 }
 
+/* Голубой CTA уходит под скруглённый подвал — без белых уголков */
+.cta-banner {
+  margin-bottom: -40px;
+  padding-bottom: 136px;
+}
+
+.footer {
+  position: relative;
+}
+
 .cta-content {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.22);
@@ -7031,15 +7044,22 @@ a.footer-contact:hover svg {
     border-radius: 14px;
   }
   .hero-video {
-    top: 8px;
-    left: 8px;
-    width: calc(100% - 16px);
-    height: calc(100% - 16px);
-    border-radius: 22px;
+    border-radius: 0 0 22px 22px;
   }
   .hero-overlay {
-    inset: 8px;
+    inset: 0;
+    border-radius: 0 0 22px 22px;
+  }
+  .footer {
+    border-radius: 22px 22px 0 0;
+  }
+  .robotic,
+  .stats-band {
     border-radius: 22px;
+  }
+  .cta-banner {
+    margin-bottom: -22px;
+    padding-bottom: 86px;
   }
   .site-search {
     top: 84px;

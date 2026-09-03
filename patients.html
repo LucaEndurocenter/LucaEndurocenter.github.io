@@ -1,317 +1,672 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Пациентам — Городской центр эндоскопической урологии</title>
-  <meta name="description" content="Информация для пациентов: запись на приём, бесплатное лечение по ОМС, время консультаций и как добраться до центра.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=20260906">
-</head>
-<body class="has-hero">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Пациентам — Городской центр эндоскопической урологии</title>
+    <meta
+      name="description"
+      content="Информация для пациентов: запись на приём, бесплатное лечение по ОМС, время консультаций и как добраться до центра."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css?v=20260906" />
+  </head>
+  <body class="has-hero">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-inner">
+        <a href="index.html" class="header-logo">
+          <img src="images/logo.svg" alt="Логотип Урологического Центра" />
+          <span class="header-logo-text"
+            >Городской центр эндоскопической урологии</span
+          >
+        </a>
+        <nav class="header-nav">
+          <div class="nav-item has-dropdown">
+            <a href="index.html" class="active"
+              >О центре<svg
+                class="nav-caret"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="6 9 12 15 18 9" /></svg
+            ></a>
+            <div class="dropdown-menu">
+              <a href="history.html">История</a>
+              <a href="patients.html" class="active">Пациентам</a>
+              <a href="science.html">Научный отдел</a>
+              <a href="dpo.html">ДПО (для специалистов)</a>
+              <a href="diagnostika.html">Диагностика</a>
+              <a href="gallery.html">Фотогалерея</a>
+              <a href="news.html">Новости</a>
+            </div>
+          </div>
+          <a href="directions.html">Направления</a>
+          <a href="doctors.html">Врачи</a>
+          <a href="specialist.html">Главный внештатный специалист</a>
+        </nav>
+        <div class="header-right">
+          <button
+            class="search-toggle"
+            type="button"
+            aria-label="Поиск по сайту"
+            aria-expanded="false"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <circle cx="11" cy="11" r="7" />
+              <line x1="21" y1="21" x2="16.5" y2="16.5" />
+            </svg>
+          </button>
+          <a href="tel:+78125761157" class="header-phone">+7 (812) 57-611-57</a>
+          <a href="appointment.html" class="btn btn-primary">Записаться</a>
+        </div>
+        <button class="menu-toggle" aria-label="Открыть меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
 
-  <!-- Header -->
-  <header class="header">
-    <div class="header-inner">
-      <a href="index.html" class="header-logo">
-        <img src="images/logo.svg" alt="Логотип Урологического Центра">
-        <span class="header-logo-text">Городской центр эндоскопической урологии</span>
-      </a>
-      <nav class="header-nav">
-        <div class="nav-item has-dropdown">
-          <a href="index.html" class="active">О центре<svg class="nav-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></a>
-          <div class="dropdown-menu">
+    <!-- Mobile Menu -->
+    <div class="mobile-overlay"></div>
+    <nav class="mobile-menu">
+      <div class="mobile-nav-parent">
+        <a href="index.html" class="active">О центре</a>
+        <button
+          type="button"
+          class="mobile-submenu-toggle"
+          aria-expanded="false"
+          aria-label="Развернуть подменю"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polyline points="6 9 12 15 18 9" />
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-submenu">
+        <a href="history.html">История</a>
+        <a href="patients.html" class="active">Пациентам</a>
+        <a href="science.html">Научный отдел</a>
+        <a href="dpo.html">ДПО (для специалистов)</a>
+        <a href="diagnostika.html">Диагностика</a>
+        <a href="gallery.html">Фотогалерея</a>
+        <a href="news.html">Новости</a>
+      </div>
+      <a href="directions.html">Направления</a>
+      <a href="doctors.html">Врачи</a>
+      <a href="specialist.html">Главный внештатный специалист</a>
+      <a href="tel:+78125761157">+7 (812) 57-611-57</a>
+      <a href="appointment.html" class="mobile-cta btn btn-primary"
+        >Записаться</a
+      >
+    </nav>
+
+    <!-- Sticky Phone -->
+    <a href="tel:+78125761157" class="sticky-phone" aria-label="Позвонить">
+      <svg viewBox="0 0 24 24">
+        <path
+          d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+        />
+      </svg>
+    </a>
+
+    <main>
+      <!-- Page Hero -->
+      <section class="page-hero page-hero-patients">
+        <div
+          class="page-hero-bg"
+          style="
+            background-image: url(&quot;images/pacientam.jpg&quot;);
+            background-position: center 72%;
+          "
+        ></div>
+        <div class="page-hero-overlay"></div>
+        <div class="container">
+          <div class="page-hero-content">
+            <h1>Пациентам</h1>
+            <p>Городской центр эндоскопической урологии и новых технологий</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section alt">
+        <div class="container">
+          <div class="section-header reveal">
+            <h2>Как получить помощь</h2>
+            <p>
+              Под руководством профессора С.В. Попова наши специалисты готовы
+              оказать вам всю необходимую медицинскую помощь. У нас вы можете
+              получить консультацию, пройти комплексное обследование,
+              подготовиться к плановой госпитализации, получить хирургическое
+              лечение с применением лапароскопических, эндоскопических или
+              робот-ассистированных технологий.<br /><br /><strong
+                >Запись на приём, консультации и лечение по ОМС, ДМС, на платной
+                основе.</strong
+              >
+            </p>
+          </div>
+          <div class="info-grid stagger-children">
+            <a href="prices.html" class="info-card info-card-link reveal-child">
+              <h3>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M20 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"
+                  />
+                  <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+                  <path d="M12 11v4" />
+                  <path d="M9.5 15h5" /></svg
+                >Прейскурант
+              </h3>
+              <p>
+                Стоимость платных медицинских услуг: консультации, урологические
+                операции, диагностика, стационар.
+                <strong>Прейскурант от 20.05.2026 года</strong>.
+              </p>
+              <span class="dir-card-more"
+                >Открыть прейскурант
+                <span class="dir-card-arrow">&rarr;</span></span
+              >
+            </a>
+            <div class="info-card reveal-child">
+              <h3>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  /></svg
+                >Запись на приём
+              </h3>
+              <p>
+                Записаться на консультацию можно по телефону
+                <strong>+7 (812) 57-611-57</strong> или через форму на сайте.
+                Подберём удобную дату и время приёма.
+              </p>
+            </div>
+            <div class="info-card reveal-child">
+              <h3>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                  /></svg
+                >Бесплатное лечение по ОМС
+              </h3>
+              <p>
+                Центр создан для оказания высокотехнологичной помощи пациентам с
+                заболеваниями урологического и онкоурологического профиля. При
+                наличии полиса обязательного медицинского страхования (ОМС)
+                лечение предоставляется <strong>бесплатно</strong>.
+              </p>
+            </div>
+            <div class="info-card reveal-child">
+              <h3>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg
+                >Лечение по ДМС
+              </h3>
+              <p>
+                Мы оказываем медицинскую помощь пациентам по программам
+                добровольного медицинского страхования (ДМС). Объём диагностики
+                и лечения определяется условиями вашей страховой программы и
+                согласовывается со страховой компанией.
+              </p>
+            </div>
+            <div class="info-card reveal-child">
+              <h3>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" /></svg
+                >Время консультаций
+              </h3>
+              <p>
+                Консультации проводятся ежедневно: в будние дни
+                <strong>с 8:30 до 20:00</strong>, в субботу и воскресенье
+                <strong>с 8:30 до 17:00</strong> — по предварительной записи.
+              </p>
+            </div>
+            <a
+              href="reviews.html"
+              class="info-card info-card-link reveal-child"
+            >
+              <h3>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                  /></svg
+                >Отзывы пациентов
+              </h3>
+              <p>
+                Отзывы и оценки работы центра на независимом портале
+                ПроДокторов, а также форма, чтобы оставить свой отзыв.
+              </p>
+              <span class="dir-card-more"
+                >Читать отзывы <span class="dir-card-arrow">&rarr;</span></span
+              >
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Оставить отзыв -->
+      <section class="page-section review-cta-section">
+        <div class="container">
+          <div class="review-cta reveal">
+            <div class="review-cta-text">
+              <h2>Оставить отзыв</h2>
+              <p>
+                Мы будем благодарны Вам за оставленный отзыв о нашей работе.
+                Ваше мнение помогает нам становиться лучше.
+              </p>
+            </div>
+            <a href="reviews.html" class="btn btn-primary">Оставить отзыв</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="faq">
+        <div class="container">
+          <div class="section-header reveal">
+            <h2>Часто задаваемые вопросы</h2>
+          </div>
+          <div class="faq-list reveal">
+            <div class="faq-item">
+              <button class="faq-question">
+                Как записаться на приём?
+                <span class="faq-icon"></span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  Записаться можно по телефону +7 (812) 57-611-57 или через
+                  форму на сайте.
+                </div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                Предоставляется ли бесплатное лечение?
+                <span class="faq-icon"></span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  Да, мы предоставляем бесплатное лечение при наличии полиса
+                  обязательного медицинского страхования (ОМС).
+                </div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                Когда проводятся консультации?
+                <span class="faq-icon"></span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  Консультации проводятся ежедневно: в будние дни с 8:30 до
+                  20:00, в субботу и воскресенье с 8:30 до 17:00 — по
+                  предварительной записи.
+                </div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                Как доехать до центра?
+                <span class="faq-icon"></span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  Центр расположен по адресу: Санкт-Петербург, ул. Чугунная, д.
+                  46.<br /><br />
+                  От станции метро «Лесная» — автобусом № 33 до остановки «Улица
+                  Чугунная», далее пройти к больнице.<br />
+                  От станции метро «Выборгская» — по подземному переходу к улице
+                  Чугунная, далее направо к дому 46.<br />
+                  Автобус № 37 (от Белорусской улицы до Финляндского вокзала) —
+                  остановки на Чугунной улице у домов № 43 и № 46.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Transport -->
+      <section class="page-section">
+        <div class="container">
+          <div class="info-grid four stagger-children">
+            <div class="info-card reveal-child">
+              <h3>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="12" cy="10" r="3" />
+                  <path
+                    d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"
+                  /></svg
+                >От м. «Лесная»
+              </h3>
+              <p>
+                Автобусом № 33 до остановки «Улица Чугунная», далее пройти
+                пешком к зданию больницы.
+              </p>
+            </div>
+            <div class="info-card reveal-child">
+              <h3>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="12" cy="10" r="3" />
+                  <path
+                    d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"
+                  /></svg
+                >От м. «Выборгская»
+              </h3>
+              <p>
+                Пешком: по подземному переходу к улице Чугунная, далее направо —
+                к дому 46.
+              </p>
+            </div>
+            <div class="info-card reveal-child">
+              <h3>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="3" y="3" width="18" height="13" rx="2" />
+                  <path d="M3 13h18M8 21h.01M16 21h.01" /></svg
+                >Автобус № 37
+              </h3>
+              <p>
+                Маршрут от Белорусской улицы до Финляндского вокзала — остановки
+                на Чугунной улице у домов № 43 и № 46.
+              </p>
+            </div>
+            <div class="info-card reveal-child">
+              <h3>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  /></svg
+                >Справочная
+              </h3>
+              <p>
+                Телефон для справок:
+                <a href="tel:+78125761157" class="text-link"
+                  >+7 (812) 57-611-57</a
+                >
+              </p>
+              <p>
+                Эл.почта:
+                <a href="mailto:info@endourocenter.ru" class="text-link"
+                  >info@endourocenter.ru</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Карта -->
+      <section class="page-section map-section">
+        <div class="container">
+          <div class="section-header reveal">
+            <h2>Как доехать до Центра</h2>
+            <p>Санкт-Петербург, ул. Чугунная, д. 46</p>
+          </div>
+          <div class="map-wrap reveal">
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?text=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%A7%D1%83%D0%B3%D1%83%D0%BD%D0%BD%D0%B0%D1%8F%2046&z=16"
+              width="100%"
+              height="420"
+              frameborder="0"
+              allowfullscreen="true"
+              title="Карта: Санкт-Петербург, ул. Чугунная, 46"
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="map-actions reveal">
+            <a
+              href="https://yandex.ru/maps/?text=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%A7%D1%83%D0%B3%D1%83%D0%BD%D0%BD%D0%B0%D1%8F%2046"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-outline-primary"
+              >Открыть в Яндекс Картах</a
+            >
+            <p class="map-note">
+              Центр находится на территории Клинической больницы Святителя Луки,
+              вход с улицы Чугунная.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta-banner">
+        <div class="container">
+          <div class="cta-content reveal-scale">
+            <h2>Записаться на приём</h2>
+            <p>Позвоните нам — подберём удобное время консультации</p>
+            <p class="phone">+7 (812) 57-611-57</p>
+            <a href="tel:+78125761157" class="btn btn-white">Позвонить</a>
+            <div class="cta-social">
+              <p>Подписывайтесь на нас в социальных сетях:</p>
+              <div class="cta-social-links">
+                <a
+                  href="https://vk.com/endourocenter"
+                  target="_blank"
+                  rel="noopener"
+                  >ВКонтакте</a
+                >
+                <a
+                  href="https://zen.yandex.ru/lucaclinic"
+                  target="_blank"
+                  rel="noopener"
+                  >Яндекс.Дзен</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="footer-logo">
+              <img src="images/logo.svg" alt="Логотип" />
+            </div>
+            <p class="footer-desc">
+              Городской центр эндоскопической урологии и новых технологий<br />Санкт-Петербурга
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Навигация</h4>
+
+            <a href="index.html">О центре</a>
             <a href="history.html">История</a>
-            <a href="patients.html" class="active">Пациентам</a>
+            <a href="patients.html">Пациентам</a>
             <a href="science.html">Научный отдел</a>
             <a href="dpo.html">ДПО (для специалистов)</a>
             <a href="diagnostika.html">Диагностика</a>
             <a href="gallery.html">Фотогалерея</a>
             <a href="news.html">Новости</a>
+            <a href="directions.html">Направления</a>
+            <a href="doctors.html">Врачи</a>
+            <a href="specialist.html">Главный внештатный специалист</a>
           </div>
-        </div>
-        <a href="directions.html">Направления</a>
-        <a href="doctors.html">Врачи</a>
-        <a href="specialist.html">Главный внештатный специалист</a>
-      </nav>
-      <div class="header-right">
-        <button class="search-toggle" type="button" aria-label="Поиск по сайту" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg></button>
-        <a href="tel:+78125761157" class="header-phone">+7 (812) 57-611-57</a>
-        <a href="appointment.html" class="btn btn-primary">Записаться</a>
-      </div>
-      <button class="menu-toggle" aria-label="Открыть меню">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  </header>
-
-  <!-- Mobile Menu -->
-  <div class="mobile-overlay"></div>
-  <nav class="mobile-menu">
-    <div class="mobile-nav-parent">
-      <a href="index.html" class="active">О центре</a>
-      <button type="button" class="mobile-submenu-toggle" aria-expanded="false" aria-label="Развернуть подменю"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button>
-    </div>
-    <div class="mobile-submenu">
-      <a href="history.html">История</a>
-      <a href="patients.html" class="active">Пациентам</a>
-      <a href="science.html">Научный отдел</a>
-      <a href="dpo.html">ДПО (для специалистов)</a>
-      <a href="diagnostika.html">Диагностика</a>
-      <a href="gallery.html">Фотогалерея</a>
-      <a href="news.html">Новости</a>
-    </div>
-    <a href="directions.html">Направления</a>
-    <a href="doctors.html">Врачи</a>
-    <a href="specialist.html">Главный внештатный специалист</a>
-    <a href="tel:+78125761157">+7 (812) 57-611-57</a>
-    <a href="appointment.html" class="mobile-cta btn btn-primary">Записаться</a>
-  </nav>
-
-  <!-- Sticky Phone -->
-  <a href="tel:+78125761157" class="sticky-phone" aria-label="Позвонить">
-    <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-  </a>
-
-  <main>
-    <!-- Page Hero -->
-    <section class="page-hero page-hero-patients">
-      <div class="page-hero-bg" style="background-image: url('images/pacientam.jpg'); background-position: center 72%;"></div>
-      <div class="page-hero-overlay"></div>
-      <div class="container">
-        <div class="page-hero-content">
-          <h1>Пациентам</h1>
-          <p>Городской центр эндоскопической урологии и новых технологий</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="page-section alt">
-      <div class="container">
-        <div class="section-header reveal">
-          <h2>Как получить помощь</h2>
-          <p>Под руководством профессора С.В. Попова наши специалисты готовы оказать вам всю необходимую медицинскую помощь. У нас вы можете получить консультацию, пройти комплексное обследование, подготовиться к плановой госпитализации, получить хирургическое лечение с применением лапароскопических, эндоскопических или робот-ассистированных технологий.<br><br><strong>Запись на приём, консультации и лечение по ОМС, ДМС, на платной основе.</strong></p>
-        </div>
-        <div class="info-grid stagger-children">
-          <a href="prices.html" class="info-card info-card-link reveal-child">
-            <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M12 11v4"/><path d="M9.5 15h5"/></svg>Прейскурант</h3>
-            <p>Стоимость платных медицинских услуг: консультации, урологические операции, диагностика, стационар. <strong>Прейскурант от 20.05.2026 года</strong>.</p>
-            <span class="dir-card-more">Открыть прейскурант <span class="dir-card-arrow">&rarr;</span></span>
-          </a>
-          <div class="info-card reveal-child">
-            <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Запись на приём</h3>
-            <p>Записаться на консультацию можно по телефону <strong>+7 (812) 57-611-57</strong> или через форму на сайте. Подберём удобную дату и время приёма.</p>
-          </div>
-          <div class="info-card reveal-child">
-            <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>Бесплатное лечение по ОМС</h3>
-            <p>Центр создан для оказания высокотехнологичной помощи пациентам с заболеваниями урологического и онкоурологического профиля. При наличии полиса обязательного медицинского страхования (ОМС) лечение предоставляется <strong>бесплатно</strong>.</p>
-          </div>
-          <div class="info-card reveal-child">
-            <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Лечение по ДМС</h3>
-            <p>Мы оказываем медицинскую помощь пациентам по программам добровольного медицинского страхования (ДМС). Объём диагностики и лечения определяется условиями вашей страховой программы и согласовывается со страховой компанией.</p>
-          </div>
-          <div class="info-card reveal-child">
-            <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Время консультаций</h3>
-            <p>Консультации проводятся ежедневно: в будние дни <strong>с 8:30 до 20:00</strong>, в субботу и воскресенье <strong>с 8:30 до 17:00</strong> — по предварительной записи.</p>
-          </div>
-          <a href="reviews.html" class="info-card info-card-link reveal-child">
-            <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Отзывы пациентов</h3>
-            <p>Отзывы и оценки работы центра на независимом портале ПроДокторов, а также форма, чтобы оставить свой отзыв.</p>
-            <span class="dir-card-more">Читать отзывы <span class="dir-card-arrow">&rarr;</span></span>
-          </a></div>
-      </div>
-    </section>
-
-    <!-- Оставить отзыв -->
-    <section class="page-section review-cta-section">
-      <div class="container">
-        <div class="review-cta reveal">
-          <div class="review-cta-text">
-            <h2>Оставить отзыв</h2>
-            <p>Мы будем благодарны Вам за оставленный отзыв о нашей работе. Ваше мнение помогает нам становиться лучше.</p>
-          </div>
-          <a href="reviews.html" class="btn btn-primary">Оставить отзыв</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="faq">
-      <div class="container">
-        <div class="section-header reveal">
-          <h2>Часто задаваемые вопросы</h2>
-        </div>
-        <div class="faq-list reveal">
-          <div class="faq-item">
-            <button class="faq-question">
-              Как записаться на приём?
-              <span class="faq-icon"></span>
-            </button>
-            <div class="faq-answer">
-              <div class="faq-answer-inner">Записаться можно по телефону +7 (812) 57-611-57 или через форму на сайте.</div>
+          <div class="footer-col">
+            <h4>Контакты</h4>
+            <a href="tel:+78125761157" class="footer-contact"
+              ><svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                /></svg
+              ><span>+7 (812) 57-611-57</span></a
+            >
+            <a href="mailto:info@endourocenter.ru" class="footer-contact"
+              ><svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="M22 6l-10 7L2 6" /></svg
+              ><span>info@endourocenter.ru</span></a
+            >
+            <p class="footer-contact">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" /></svg
+              ><span>Санкт-Петербург, ул. Чугунная, д. 46</span>
+            </p>
+            <div class="footer-social">
+              <a
+                href="https://vk.com/endourocenter"
+                target="_blank"
+                rel="noopener"
+                aria-label="ВКонтакте"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486 1.801-2.339 4.157-5.336 2.073-5.336h-3.981c-.772 0-.828.435-1.103 1.366-.995 2.388-1.805 5.146-3.318 5.146-.617 0-.858-.406-.858-.928 0-1.626.327-3.222.327-4.933 0-1.803-1.177-1.803-3.339-1.803-1.272 0-2.686.175-3.758.517-.523.167-.523.454-.523.901 0 .649.471.801.471 2.915 0 4.019-.942 5.033-2.19 5.033-1.248 0-2.809-2.624-3.97-5.745-.304-.874-.585-1.379-1.384-1.379H.916c-.772 0-.927.435-.927.927 0 .866.404 2.655 1.731 5.3 2.002 4.001 4.809 6.571 8.441 6.571z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://zen.yandex.ru/lucaclinic"
+                target="_blank"
+                rel="noopener"
+                aria-label="Яндекс.Дзен"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 8.16c-.169 1.858-.903 2.732-2.882 3.989-.967.613-1.559 1.021-1.559 1.83 0 .955.721 1.681 1.68 1.681 1.011 0 1.723-.794 1.864-1.917h2.129c-.127 2.537-1.969 4.17-4.023 4.17-2.224 0-3.913-1.637-3.913-3.913 0-2.028 1.42-2.875 3.027-3.803 1.274-.737 1.583-1.063 1.696-2.037H9.116V8.16h6.452z"
+                  />
+                </svg>
+              </a>
             </div>
           </div>
-          <div class="faq-item">
-            <button class="faq-question">
-              Предоставляется ли бесплатное лечение?
-              <span class="faq-icon"></span>
-            </button>
-            <div class="faq-answer">
-              <div class="faq-answer-inner">Да, мы предоставляем бесплатное лечение при наличии полиса обязательного медицинского страхования (ОМС).</div>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question">
-              Когда проводятся консультации?
-              <span class="faq-icon"></span>
-            </button>
-            <div class="faq-answer">
-              <div class="faq-answer-inner">Консультации проводятся ежедневно: в будние дни с 8:30 до 20:00, в субботу и воскресенье с 8:30 до 17:00 — по предварительной записи.</div>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question">
-              Как доехать до центра?
-              <span class="faq-icon"></span>
-            </button>
-            <div class="faq-answer">
-              <div class="faq-answer-inner">Центр расположен по адресу: Санкт-Петербург, ул. Чугунная, д. 46.<br><br>
-              От станции метро «Лесная» — автобусом № 33 до остановки «Улица Чугунная», далее пройти к больнице.<br>
-              От станции метро «Выборгская» — по подземному переходу к улице Чугунная, далее направо к дому 46.<br>
-              Автобус № 37 (от Белорусской улицы до Финляндского вокзала) — остановки на Чугунной улице у домов № 43 и № 46.</div>
+          <div class="footer-col">
+            <h4>Часы работы</h4>
+            <div class="footer-hours">
+              <p>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" /></svg
+                ><span class="fh-days">Пн&ndash;Пт</span
+                ><span class="fh-time">8:30 &ndash; 20:00</span>
+              </p>
+              <p>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" /></svg
+                ><span class="fh-days">Сб&ndash;Вс</span
+                ><span class="fh-time">8:30 &ndash; 17:00</span>
+              </p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Transport -->
-    <section class="page-section">
-      <div class="container">
-        <div class="info-grid four stagger-children">
-          <div class="info-card reveal-child">
-            <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/></svg>От м. «Лесная»</h3>
-            <p>Автобусом № 33 до остановки «Улица Чугунная», далее пройти пешком к зданию больницы.</p>
-          </div>
-          <div class="info-card reveal-child">
-            <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/></svg>От м. «Выборгская»</h3>
-            <p>Пешком: по подземному переходу к улице Чугунная, далее направо — к дому 46.</p>
-          </div>
-          <div class="info-card reveal-child">
-            <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="13" rx="2"/><path d="M3 13h18M8 21h.01M16 21h.01"/></svg>Автобус № 37</h3>
-            <p>Маршрут от Белорусской улицы до Финляндского вокзала — остановки на Чугунной улице у домов № 43 и № 46.</p>
-          </div>
-          <div class="info-card reveal-child">
-            <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Справочная</h3>
-            <p>Телефон для справок: <a href="tel:+78125761157" class="text-link">+7 (812) 57-611-57</a></p>
-            <p>Эл.почта: <a href="mailto:info@endourocenter.ru" class="text-link">info@endourocenter.ru</a></p>
-          </div>
+        <div class="footer-divider"></div>
+        <div class="footer-bottom">
+          <span
+            >© 2026 Городской центр эндоскопической урологии. Все права
+            защищены.</span
+          >
+          <span>Лицензия № ЛО-78-01-010769</span>
         </div>
       </div>
-    </section>
+    </footer>
 
-    <!-- Карта -->
-    <section class="page-section map-section">
-      <div class="container">
-        <div class="section-header reveal">
-          <h2>Как доехать до Центра</h2>
-          <p>Санкт-Петербург, ул. Чугунная, д. 46</p>
-        </div>
-        <div class="map-wrap reveal">
-          <iframe src="https://yandex.ru/map-widget/v1/?text=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%A7%D1%83%D0%B3%D1%83%D0%BD%D0%BD%D0%B0%D1%8F%2046&z=16" width="100%" height="420" frameborder="0" allowfullscreen="true" title="Карта: Санкт-Петербург, ул. Чугунная, 46" loading="lazy"></iframe>
-        </div>
-        <div class="map-actions reveal">
-          <a href="https://yandex.ru/maps/?text=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%A7%D1%83%D0%B3%D1%83%D0%BD%D0%BD%D0%B0%D1%8F%2046" target="_blank" rel="noopener" class="btn btn-outline-primary">Открыть в Яндекс Картах</a>
-          <p class="map-note">Центр находится на территории Клинической больницы Святителя Луки, вход с улицы Чугунная.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="cta-banner">
-      <div class="container">
-        <div class="cta-content reveal-scale">
-          <h2>Записаться на приём</h2>
-          <p>Позвоните нам — подберём удобное время консультации</p>
-          <p class="phone">+7 (812) 57-611-57</p>
-          <a href="tel:+78125761157" class="btn btn-white">Позвонить</a>
-          <div class="cta-social">
-            <p>Подписывайтесь на нас в социальных сетях:</p>
-            <div class="cta-social-links">
-              <a href="https://vk.com/endourocenter" target="_blank" rel="noopener">ВКонтакте</a>
-                            <a href="https://zen.yandex.ru/lucaclinic" target="_blank" rel="noopener">Яндекс.Дзен</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-    
-  </main>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-col">
-          <div class="footer-logo">
-            <img src="images/logo.svg" alt="Логотип">
-          </div>
-          <p class="footer-desc">Городской центр эндоскопической урологии и новых технологий<br>Санкт-Петербурга</p>
-        </div>
-        <div class="footer-col">
-          <h4>Навигация</h4>
-
-          <a href="index.html">О центре</a>
-          <a href="history.html">История</a>
-          <a href="patients.html">Пациентам</a>
-          <a href="science.html">Научный отдел</a>
-          <a href="dpo.html">ДПО (для специалистов)</a>
-          <a href="diagnostika.html">Диагностика</a>
-          <a href="gallery.html">Фотогалерея</a>
-          <a href="news.html">Новости</a>
-          <a href="directions.html">Направления</a>
-          <a href="doctors.html">Врачи</a>
-          <a href="specialist.html">Главный внештатный специалист</a>
-        </div>
-        <div class="footer-col">
-          <h4>Контакты</h4>
-          <a href="tel:+78125761157" class="footer-contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>+7 (812) 57-611-57</span></a>
-          <a href="mailto:info@endourocenter.ru" class="footer-contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg><span>info@endourocenter.ru</span></a>
-          <p class="footer-contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Санкт-Петербург, ул. Чугунная, д. 46</span></p>
-          <div class="footer-social">
-            <a href="https://vk.com/endourocenter" target="_blank" rel="noopener" aria-label="ВКонтакте">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486 1.801-2.339 4.157-5.336 2.073-5.336h-3.981c-.772 0-.828.435-1.103 1.366-.995 2.388-1.805 5.146-3.318 5.146-.617 0-.858-.406-.858-.928 0-1.626.327-3.222.327-4.933 0-1.803-1.177-1.803-3.339-1.803-1.272 0-2.686.175-3.758.517-.523.167-.523.454-.523.901 0 .649.471.801.471 2.915 0 4.019-.942 5.033-2.19 5.033-1.248 0-2.809-2.624-3.97-5.745-.304-.874-.585-1.379-1.384-1.379H.916c-.772 0-.927.435-.927.927 0 .866.404 2.655 1.731 5.3 2.002 4.001 4.809 6.571 8.441 6.571z"/></svg>
-            </a>
-            <a href="https://zen.yandex.ru/lucaclinic" target="_blank" rel="noopener" aria-label="Яндекс.Дзен">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 8.16c-.169 1.858-.903 2.732-2.882 3.989-.967.613-1.559 1.021-1.559 1.83 0 .955.721 1.681 1.68 1.681 1.011 0 1.723-.794 1.864-1.917h2.129c-.127 2.537-1.969 4.17-4.023 4.17-2.224 0-3.913-1.637-3.913-3.913 0-2.028 1.42-2.875 3.027-3.803 1.274-.737 1.583-1.063 1.696-2.037H9.116V8.16h6.452z"/></svg>
-            </a>
-          </div>
-        </div>
-        <div class="footer-col">
-          <h4>Часы работы</h4>
-          <div class="footer-hours">
-            <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span class="fh-days">Пн&ndash;Пт</span><span class="fh-time">8:30 &ndash; 20:00</span></p>
-            <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span class="fh-days">Сб&ndash;Вс</span><span class="fh-time">8:30 &ndash; 17:00</span></p>
-          </div>
-          
-        </div>
-      </div>
-      <div class="footer-divider"></div>
-      <div class="footer-bottom">
-        <span>© 2026 Городской центр эндоскопической урологии. Все права защищены.</span>
-        <span>Лицензия № ЛО-78-01-010769</span>
-      </div>
-    </div>
-  </footer>
-
-  <script src="js/main.js?v=20260906"></script>
-  <script src="js/search.js?v=20260906" defer></script>
-</body>
+    <script src="js/main.js?v=20260906"></script>
+    <script src="js/search.js?v=20260906" defer></script>
+  </body>
 </html>
