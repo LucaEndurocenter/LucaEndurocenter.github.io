@@ -437,3 +437,131 @@ if (filterBtns.length && filterableCards.length) {
     searchInput.addEventListener('input', filterDoctors);
   }
 }
+
+
+// ============================================
+// NEWS CAROUSEL (главная страница)
+// 3 новости в ряд, свайп / стрелки / точки
+// ============================================
+(function() {
+  const carousel = document.querySelector('.news-carousel');
+  if (!carousel) return;
+
+  const track = carousel.querySelector('.news-track');
+  const slides = Array.from(track.children);
+  const prevBtn = carousel.querySelector('.news-prev');
+  const nextBtn = carousel.querySelector('.news-next');
+  const dotsWrap = document.querySelector('.news-dots');
+  if (!track || slides.length === 0) return;
+
+  function perView() {
+    if (window.innerWidth <= 640) return 1;
+    if (window.innerWidth <= 1024) return 2;
+    return 3;
+  }
+
+  let page = 0;
+  let pages = 1;
+
+  function pageCount() {
+    return Math.max(1, Math.ceil(slides.length / perView()));
+  }
+
+  function slideStep() {
+    // ширина слайда + gap
+    const gap = parseFloat(getComputedStyle(track).gap) || 0;
+    return slides[0].getBoundingClientRect().width + gap;
+  }
+
+  function goTo(p, animate) {
+    pages = pageCount();
+    page = Math.max(0, Math.min(p, pages - 1));
+    if (animate === false) track.style.transition = 'none';
+    else track.style.transition = '';
+    track.style.transform = 'translateX(' + (-page * perView() * slideStep()) + 'px)';
+    if (animate === false) {
+      // вернуть плавность после мгновенного сдвига
+      void track.offsetWidth;
+      track.style.transition = '';
+    }
+    updateDots();
+    updateArrows();
+  }
+
+  function updateArrows() {
+    if (prevBtn) prevBtn.disabled = page === 0;
+    if (nextBtn) nextBtn.disabled = page >= pages - 1;
+  }
+
+  function buildDots() {
+    if (!dotsWrap) return;
+    dotsWrap.innerHTML = '';
+    pages = pageCount();
+    for (let i = 0; i < pages; i++) {
+      const d = document.createElement('button');
+      d.className = 'news-dot' + (i === page ? ' active' : '');
+      d.setAttribute('aria-label', 'Страница новостей ' + (i + 1));
+      d.addEventListener('click', () => goTo(i));
+      dotsWrap.appendChild(d);
+    }
+  }
+
+  function updateDots() {
+    if (!dotsWrap) return;
+    Array.from(dotsWrap.children).forEach((d, i) => {
+      d.classList.toggle('active', i === page);
+    });
+  }
+
+  if (prevBtn) prevBtn.addEventListener('click', () => goTo(page - 1));
+  if (nextBtn) nextBtn.addEventListener('click', () => goTo(page + 1));
+
+  // ----- свайп / перетаскивание -----
+  let startX = 0, curX = 0, dragging = false, baseOffset = 0, moved = false;
+
+  function onDown(x) {
+    dragging = true; moved = false;
+    startX = curX = x;
+    baseOffset = -page * perView() * slideStep();
+    carousel.classList.add('dragging');
+  }
+  function onMove(x) {
+    if (!dragging) return;
+    curX = x;
+    const dx = curX - startX;
+    if (Math.abs(dx) > 8) moved = true;
+    track.style.transform = 'translateX(' + (baseOffset + dx) + 'px)';
+  }
+  function onUp() {
+    if (!dragging) return;
+    dragging = false;
+    carousel.classList.remove('dragging');
+    const dx = curX - startX;
+    const threshold = slideStep() * 0.2;
+    if (dx <= -threshold) goTo(page + 1);
+    else if (dx >= threshold) goTo(page - 1);
+    else goTo(page);
+  }
+
+  carousel.addEventListener('touchstart', e => onDown(e.touches[0].clientX), { passive: true });
+  carousel.addEventListener('touchmove', e => onMove(e.touches[0].clientX), { passive: true });
+  carousel.addEventListener('touchend', onUp);
+
+  carousel.addEventListener('mousedown', e => { e.preventDefault(); onDown(e.clientX); });
+  window.addEventListener('mousemove', e => onMove(e.clientX));
+  window.addEventListener('mouseup', onUp);
+
+  // не даём клику по ссылке сработать после перетаскивания
+  carousel.addEventListener('click', e => {
+    if (moved) { e.preventDefault(); e.stopPropagation(); moved = false; }
+  }, true);
+
+  let resizeT;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeT);
+    resizeT = setTimeout(() => { buildDots(); goTo(page, false); }, 150);
+  });
+
+  buildDots();
+  goTo(0, false);
+})();
