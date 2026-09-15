@@ -366,12 +366,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     galleryImages.forEach(function(img) {
       img.style.cursor = 'pointer';
-      img.parentElement.addEventListener('click', function(e) {
-        if (e.target === img) {
-          lightboxImg.src = img.src;
-          lightbox.classList.add('active');
-          document.body.style.overflow = 'hidden';
-        }
+      img.addEventListener('click', function(e) {
+        if (e.target.closest && e.target.closest('a, button')) return;
+        lightboxImg.src = img.src;
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
       });
     });
 
@@ -564,4 +563,120 @@ if (filterBtns.length && filterableCards.length) {
 
   buildDots();
   goTo(0, false);
+})();
+
+
+// ============================================
+// НОВОСТИ: карточки из NEWS_DATA + модальные окна + фильтр по годам
+// ============================================
+(function() {
+  const grid = document.querySelector('.news-page-grid');
+  if (!grid || !window.NEWS_DATA) return;
+
+  const byId = {};
+  window.NEWS_DATA.forEach(function(n) { byId[n.id] = n; });
+
+  // ----- рендер карточек -----
+  const frag = document.createDocumentFragment();
+  window.NEWS_DATA.forEach(function(n) {
+    const card = document.createElement('article');
+    card.className = 'news-card-page reveal-child';
+    card.setAttribute('data-news-id', n.id);
+    card.setAttribute('data-year', n.date.slice(-4));
+    card.innerHTML =
+      '<div class="news-card-page-img"><img src="' + n.img + '" alt="" loading="lazy" /></div>' +
+      '<div class="news-card-page-body"><span class="date">' + n.date + '</span><h4>' + n.title + '</h4></div>';
+    card.addEventListener('click', function() { openNewsModal(n.id); });
+    frag.appendChild(card);
+  });
+  grid.appendChild(frag);
+
+  // анимация появления для динамических карточек
+  if ('IntersectionObserver' in window) {
+    const cardObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          cardObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0, rootMargin: '0px 0px -40px 0px' });
+    grid.querySelectorAll('.reveal-child').forEach(function(el) { cardObserver.observe(el); });
+    setTimeout(function() {
+      grid.querySelectorAll('.reveal-child').forEach(function(el) { el.classList.add('visible'); });
+    }, 3000);
+  } else {
+    grid.querySelectorAll('.reveal-child').forEach(function(el) { el.classList.add('visible'); });
+  }
+
+  // ----- модальное окно -----
+  const overlay = document.createElement('div');
+  overlay.className = 'news-modal-overlay';
+  overlay.innerHTML =
+    '<div class="news-modal" role="dialog" aria-modal="true">' +
+    '<div class="news-modal-head"><span class="news-modal-date"></span>' +
+    '<h3 class="news-modal-title"></h3>' +
+    '<button type="button" class="news-modal-close" aria-label="Закрыть">&times;</button></div>' +
+    '<div class="news-modal-body"></div></div>';
+  document.body.appendChild(overlay);
+  const mDate = overlay.querySelector('.news-modal-date');
+  const mTitle = overlay.querySelector('.news-modal-title');
+  const mBody = overlay.querySelector('.news-modal-body');
+  let openId = null;
+
+  function openNewsModal(id, fromHash) {
+    const n = byId[id];
+    if (!n) return;
+    openId = id;
+    mDate.textContent = n.date;
+    mTitle.textContent = n.title;
+    mBody.innerHTML = n.body;
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    overlay.scrollTop = 0;
+    if (!fromHash && location.hash !== '#news-' + id) {
+      history.pushState(null, '', '#news-' + id);
+    }
+  }
+
+  function closeNewsModal() {
+    if (!openId) return;
+    openId = null;
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+    if (location.hash.indexOf('#news-') === 0) {
+      history.pushState(null, '', location.pathname + location.search);
+    }
+  }
+
+  overlay.addEventListener('click', function(e) { if (e.target === overlay) closeNewsModal(); });
+  overlay.querySelector('.news-modal-close').addEventListener('click', closeNewsModal);
+  document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeNewsModal(); });
+  window.addEventListener('popstate', function() {
+    const m = location.hash.match(/^#news-(.+)$/);
+    if (m && byId[m[1]]) openNewsModal(m[1], true);
+    else closeNewsModal();
+  });
+
+  // открытие по прямой ссылке вида news.html#news-<id>
+  const m0 = location.hash.match(/^#news-(.+)$/);
+  if (m0 && byId[m0[1]]) {
+    setTimeout(function() { openNewsModal(m0[1], true); }, 300);
+  }
+
+  // ----- фильтр по годам -----
+  const filterWrap = document.querySelector('.news-filter');
+  if (filterWrap) {
+    filterWrap.addEventListener('click', function(e) {
+      const btn = e.target.closest('.news-filter-btn');
+      if (!btn) return;
+      filterWrap.querySelectorAll('.news-filter-btn').forEach(function(b) {
+        b.classList.toggle('active', b === btn);
+      });
+      const y = btn.getAttribute('data-year');
+      grid.querySelectorAll('.news-card-page').forEach(function(card) {
+        card.classList.toggle('hidden-year', y !== 'all' && card.getAttribute('data-year') !== y);
+      });
+    });
+  }
 })();

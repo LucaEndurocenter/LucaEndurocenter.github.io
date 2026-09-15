@@ -1,0 +1,26 @@
+_work_news/articles/00.html|08.09.2026|Конгресс Азиатской Ассоциации Урологов|https://endourocenter.ru/news/kongress-aziatskoy-associacii-urolo/|ok|320695
+_work_news/articles/01.html|13.08.2026|Какие болезни могут подстерегать летом?|https://endourocenter.ru/news/kakie-bolezni-mogut-podsteregat-let/|ok|327358
+_work_news/articles/02.html|31.07.2026|Киберсериала «Искусственный интеллект будущего»|https://endourocenter.ru/news/kiberseriala-iskusstvennyy-intelle/|ok|324373
+_work_news/articles/03.html|15.07.2026|Новикова Е.А., врач-терапевт, нутрициолог рассказала о пользе употребления орехов.|https://endourocenter.ru/news/novikova-e-a-vrach-terapevt-nutriciolo/|ok|319875
+_work_news/articles/04.html|14.07.2026|Расширение научно-исследовательской деятельности Клинической больницы Святителя Луки в сфере клинических испытаний медицинских изделий|https://endourocenter.ru/news/rasshirenie-nauchno-issledovatelskoy/|ok|329911
+_work_news/articles/05.html|14.07.2026|Можно ли заболеть от кондиционера? Как обезопасить себя в жару? Какие опасности таит холодный воздух?|https://endourocenter.ru/news/mozhno-li-zabolet-ot-kondicionera-kak/|ok|317580
+_work_news/articles/06.html|13.07.2026|День мужского и женского здоровья|https://endourocenter.ru/news/den-muzhskogo-i-zhenskogo-zdorovya/|ok|323836
+_work_news/articles/07.html|09.07.2026|Вред от курения вейпов|https://endourocenter.ru/news/vred-ot-kureniya-veypov/|ok|330886
+_work_news/articles/08.html|08.07.2026|Участие онкологов Клиники Святителя Луки в работе онкологического форума AZON|https://endourocenter.ru/news/5117/|ok|327494
+_work_news/articles/09.html|07.07.2026|Причины мочекаменной болезни|https://endourocenter.ru/news/prichiny-mochekamennoy-bolezni/|ok|323142
+_work_news/articles/10.html|03.07.2026|Главный уролог Санкт-Петербурга, профессор Попов С.В. продолжает работу на Форуме «Белые ночи».|https://endourocenter.ru/news/glavnyy-urolog-sankt-peterburga-prof-2/|ok|320292
+_work_news/articles/11.html|02.07.2026|️Профессор Попов выполнил робот-ассистированную операцию при использовании робота китайского производства|https://endourocenter.ru/news/️professor-popov-vypolnil-robot-assi/|ERR 'ascii' codec can't encode character '\ufe0f' in position 10: ordinal not in range(128)|0
+_work_news/articles/12.html|30.06.2026|Причины и профилактика инсульта.|https://endourocenter.ru/news/prichiny-i-profilaktika-insulta/|ok|322337
+_work_news/articles/13.html|26.06.2026|Премьера сериала «ИИ будущего»|https://endourocenter.ru/news/premera-seriala-ii-budushhego/|ok|322719
+_work_news/articles/14.html|19.06.2026|Коллектив Клинической больницы Святителя Луки награжден Почетной грамотой Председателя Законодательного Собрания Санкт-Петербурга|https://endourocenter.ru/news/kollektiv-klinicheskoy-bolnicy-svyat/|ok|325915
+_work_news/articles/15.html|21.04.2026|Камни в почках|https://endourocenter.ru/news/kamni-v-pochkakh/|ok|326923
+_work_news/articles/16.html|01.04.2026|В Москве состоялась Научно-практическая конференция «Андрология и пенильная хирургия»|https://endourocenter.ru/news/v-moskve-sostoyalas-nauchno-praktiche/|ok|320996
+_work_news/articles/17.html|19.03.2026|Форум «Здоровое общество»|https://endourocenter.ru/news/pod-rukovodstvom-glavnogo-urologa-s-2/|ok|325383
+_work_news/articles/18.html|19.03.2026|Пересадка почки теперь доступна в рамках ОМС|https://endourocenter.ru/news/peresadka-pochki-teper-dostupna-v-ram/|ok|325094
+_work_news/articles/19.html|19.03.2026|14 марта 2026 г. состоялась конференция под эгидой Санкт-Петербургского общества терапевтов им. С. П. Боткина|https://endourocenter.ru/news/pro-nauku-3/|ok|323125
+_work_news/articles/20.html|19.03.2026|День почки|https://endourocenter.ru/news/den-pochki/|ok|318460
+_work_news/articles/21.html|13.02.2026|Под руководством главного уролога Санкт-Петербурга Попова С. В. Клиническая больница Святителя Луки завершает акцию, посвященную Дню борьбы с онкологическими заболеваниями.|https://endourocenter.ru/news/pod-rukovodstvom-glavnogo-urologa-s/|ok|334087
+_work_news/articles/22.html|06.02.2026|Петербуржцы смогут бесплатно провериться в онкоцентрах в День борьбы с раком|https://endourocenter.ru/news/peterburzhcy-smogut-besplatno-prover/|ok|315177
+_work_news/articles/23.html|06.02.2026|О возможностях эндоваскулярной хирургии в свежем выпуске программы «Здоровье» с заведующим отделением РХМДЛ Винцковским С. Г.|https://endourocenter.ru/news/o-vozmozhnostyakh-yendovaskulyarnoy-khiru/|ok|325350
+_work_news/articles/24.html|06.02.2026|В рамках акции «День борьбы с раком» бесплатные консультации врача онколога и онкоуролога с 4 по 13 февраля|https://endourocenter.ru/news/v-ramkakh-akcii-den-borby-s-rakom/|ok|325086
+_work_news/articles/25.html|22.01.2026|День Ленинградской Победы|https://endourocenter.ru/news/den-leningradskoy-pobedy/|ok|313676
